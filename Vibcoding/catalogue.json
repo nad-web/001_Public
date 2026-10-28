@@ -4,12 +4,8 @@
     "name": "Pocket Budget",
     "category": "finances",
     "summary": "A calm, clear picture of where your monthly money goes.",
-    "status": "planned",
-    "skills": [
-      "Forms",
-      "Local storage",
-      "Data visualization"
-    ],
+    "status": "ready",
+    "skills": ["Forms", "Local storage", "Data visualization"],
     "brief": {
       "problem": "Budget notes are scattered and monthly totals are hard to see.",
       "audience": "People tracking a personal monthly budget.",
@@ -25,12 +21,8 @@
     "name": "Deutsch Daily",
     "category": "languages",
     "summary": "Build a German vocabulary habit, one useful word at a time.",
-    "status": "planned",
-    "skills": [
-      "Learning design",
-      "State management",
-      "Accessibility"
-    ],
+    "status": "ready",
+    "skills": ["Learning design", "State management", "Accessibility"],
     "brief": {
       "problem": "Vocabulary lists are easy to collect and difficult to practice consistently.",
       "audience": "German learners looking for a short daily practice.",
@@ -46,12 +38,8 @@
     "name": "Decision Wheel",
     "category": "fun",
     "summary": "Too many options? Give a small decision a playful spin.",
-    "status": "planned",
-    "skills": [
-      "Animation",
-      "Randomness",
-      "Interaction design"
-    ],
+    "status": "ready",
+    "skills": ["Animation", "Randomness", "Interaction design"],
     "brief": {
       "problem": "Small group choices can take more discussion than they deserve.",
       "audience": "Friends deciding what to eat, watch, or do next.",
@@ -67,12 +55,8 @@
     "name": "Pack Light",
     "category": "on-the-way",
     "summary": "A reusable packing list for less last-minute travel chaos.",
-    "status": "planned",
-    "skills": [
-      "Checklists",
-      "Local storage",
-      "Responsive UI"
-    ],
+    "status": "ready",
+    "skills": ["Checklists", "Local storage", "Responsive UI"],
     "brief": {
       "problem": "Packing lists get recreated for every trip and small essentials are forgotten.",
       "audience": "Travelers preparing a weekend or longer trip.",
@@ -88,12 +72,8 @@
     "name": "Focus Flow",
     "category": "productivity",
     "summary": "A simple focus timer with room to breathe between sessions.",
-    "status": "planned",
-    "skills": [
-      "Timers",
-      "State machines",
-      "UX design"
-    ],
+    "status": "ready",
+    "skills": ["Timers", "State machines", "UX design"],
     "brief": {
       "problem": "Starting a focused session can feel harder than the work itself.",
       "audience": "Students and independent workers.",
@@ -109,12 +89,8 @@
     "name": "Savings Goal",
     "category": "finances",
     "summary": "Turn a savings target into a clear, editable plan.",
-    "status": "planned",
-    "skills": [
-      "Calculations",
-      "Input validation",
-      "Charts"
-    ],
+    "status": "ready",
+    "skills": ["Calculations", "Input validation", "Charts"],
     "brief": {
       "problem": "A large savings target is hard to translate into monthly contributions.",
       "audience": "People planning a purchase or a savings milestone.",
@@ -130,12 +106,8 @@
     "name": "Artikel Trainer",
     "category": "languages",
     "summary": "Make der, die, and das a little less mysterious.",
-    "status": "planned",
-    "skills": [
-      "Quiz logic",
-      "Feedback design",
-      "Localization"
-    ],
+    "status": "ready",
+    "skills": ["Quiz logic", "Feedback design", "Localization"],
     "brief": {
       "problem": "German noun genders need repeated practice with clear correction.",
       "audience": "Beginner and intermediate German learners.",
@@ -151,12 +123,8 @@
     "name": "Memory Lab",
     "category": "fun",
     "summary": "A tiny matching game for a quick mental reset.",
-    "status": "planned",
-    "skills": [
-      "Game state",
-      "CSS transitions",
-      "Keyboard support"
-    ],
+    "status": "ready",
+    "skills": ["Game state", "CSS transitions", "Keyboard support"],
     "brief": {
       "problem": "A short break should be easy to start without accounts or downloads.",
       "audience": "Anyone wanting a short matching game.",
@@ -172,12 +140,8 @@
     "name": "Trip Split",
     "category": "on-the-way",
     "summary": "Keep shared trip costs understandable from the first coffee.",
-    "status": "planned",
-    "skills": [
-      "Money arithmetic",
-      "Forms",
-      "Data export"
-    ],
+    "status": "ready",
+    "skills": ["Money arithmetic", "Forms", "Data export"],
     "brief": {
       "problem": "Group expenses are difficult to track and settle fairly.",
       "audience": "Small groups sharing a trip.",
@@ -193,12 +157,8 @@
     "name": "Week Board",
     "category": "productivity",
     "summary": "A small, flexible board for the week ahead.",
-    "status": "planned",
-    "skills": [
-      "Drag and drop",
-      "Keyboard UX",
-      "Persistence"
-    ],
+    "status": "ready",
+    "skills": ["Drag and drop", "Keyboard UX", "Persistence"],
     "brief": {
       "problem": "A weekly plan can become more complicated than the tasks themselves.",
       "audience": "People organizing a small personal weekly plan.",
@@ -214,12 +174,8 @@
     "name": "Flashcard Studio",
     "category": "education",
     "summary": "Make a small deck, then practice what matters.",
-    "status": "planned",
-    "skills": [
-      "CRUD",
-      "Import/export",
-      "Learning UX"
-    ],
+    "status": "ready",
+    "skills": ["CRUD", "Import/export", "Learning UX"],
     "brief": {
       "problem": "People need an easy way to practice their own questions and answers.",
       "audience": "Learners working from personal study notes.",
@@ -235,12 +191,8 @@
     "name": "Quiz Forge",
     "category": "education",
     "summary": "Turn a small question set into a focused practice round.",
-    "status": "planned",
-    "skills": [
-      "Validation",
-      "Scoring",
-      "Feedback"
-    ],
+    "status": "ready",
+    "skills": ["Validation", "Scoring", "Feedback"],
     "brief": {
       "problem": "Practice questions often lack a simple, reusable quiz interface.",
       "audience": "Learners and educators preparing a small practice set.",
@@ -256,12 +208,8 @@
     "name": "JSON Workbench",
     "category": "developer-tools",
     "summary": "Format and inspect JSON without sending it to a server.",
-    "status": "planned",
-    "skills": [
-      "Parsing",
-      "Error handling",
-      "Developer UX"
-    ],
+    "status": "ready",
+    "skills": ["Parsing", "Error handling", "Developer UX"],
     "brief": {
       "problem": "Unformatted JSON is hard to inspect and parsing errors can be unclear.",
       "audience": "Developers working with non-sensitive sample data.",
@@ -277,12 +225,8 @@
     "name": "Regex Playground",
     "category": "developer-tools",
     "summary": "Explore a pattern against sample text with clear feedback.",
-    "status": "planned",
-    "skills": [
-      "Web workers",
-      "Regex",
-      "Performance"
-    ],
+    "status": "ready",
+    "skills": ["Web workers", "Regex", "Performance"],
     "brief": {
       "problem": "Regular expression experiments need visible matches and safe execution limits.",
       "audience": "Developers learning or debugging JavaScript patterns.",
@@ -298,12 +242,8 @@
     "name": "Unit Converter",
     "category": "everyday-tools",
     "summary": "Everyday conversions with the units always in view.",
-    "status": "planned",
-    "skills": [
-      "Pure functions",
-      "Numeric validation",
-      "Responsive forms"
-    ],
+    "status": "ready",
+    "skills": ["Pure functions", "Numeric validation", "Responsive forms"],
     "brief": {
       "problem": "Quick conversions can be error-prone when units are unclear.",
       "audience": "People converting common length, weight, and temperature units.",
@@ -319,12 +259,8 @@
     "name": "QR Studio",
     "category": "everyday-tools",
     "summary": "Make simple QR codes with an uncluttered preview.",
-    "status": "planned",
-    "skills": [
-      "Asset export",
-      "Library integration",
-      "Validation"
-    ],
+    "status": "ready",
+    "skills": ["Asset export", "Library integration", "Validation"],
     "brief": {
       "problem": "Simple QR creation should not require an account or uploading private text.",
       "audience": "People creating codes for public links or short text.",
@@ -340,12 +276,8 @@
     "name": "Break Buddy",
     "category": "health-wellbeing",
     "summary": "A gentle reminder to step away from the screen.",
-    "status": "planned",
-    "skills": [
-      "Timers",
-      "Preferences",
-      "Accessible design"
-    ],
+    "status": "ready",
+    "skills": ["Timers", "Preferences", "Accessible design"],
     "brief": {
       "problem": "Long screen sessions make it easy to forget a short movement break.",
       "audience": "People who spend long stretches at a desk.",
@@ -361,12 +293,8 @@
     "name": "Habit Garden",
     "category": "health-wellbeing",
     "summary": "Track a few everyday habits without turning life into a score.",
-    "status": "planned",
-    "skills": [
-      "Date handling",
-      "Local storage",
-      "Data design"
-    ],
+    "status": "ready",
+    "skills": ["Date handling", "Local storage", "Data design"],
     "brief": {
       "problem": "Habit tools can feel overwhelming when only a few routines matter.",
       "audience": "People tracking self-chosen everyday routines.",
@@ -382,12 +310,8 @@
     "name": "Palette Studio",
     "category": "creative",
     "summary": "Find a handful of colors that work well together.",
-    "status": "planned",
-    "skills": [
-      "Color math",
-      "Clipboard API",
-      "Visual design"
-    ],
+    "status": "ready",
+    "skills": ["Color math", "Clipboard API", "Visual design"],
     "brief": {
       "problem": "A small design project needs a coherent, reusable color palette.",
       "audience": "Makers starting a personal design project.",
@@ -403,12 +327,8 @@
     "name": "Writing Sparks",
     "category": "creative",
     "summary": "A small nudge for the blank page.",
-    "status": "planned",
-    "skills": [
-      "Content design",
-      "Random selection",
-      "Local editing"
-    ],
+    "status": "ready",
+    "skills": ["Content design", "Random selection", "Local editing"],
     "brief": {
       "problem": "Starting a writing exercise is difficult when the page is empty.",
       "audience": "People practicing creative writing.",

@@ -3,7 +3,7 @@ const input = document.querySelector('#feature');
 const list = document.querySelector('#features');
 const feedback = document.querySelector('#feedback');
 
-form.addEventListener('submit', event => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   const value = input.value.trim();
   if (!value) {
@@ -12,7 +12,8 @@ form.addEventListener('submit', event => {
     return;
   }
   if (list.children.length >= 10) {
-    feedback.textContent = 'Keep the sketch focused: remove an idea before adding another.';
+    feedback.textContent =
+      'Keep the sketch focused: remove an idea before adding another.';
     return;
   }
   const item = document.createElement('li');
@@ -27,7 +28,7 @@ form.addEventListener('submit', event => {
     feedback.textContent = `${list.children.length} ideas in this sketch.`;
     input.focus();
   });
-  item.append(text,remove);
+  item.append(text, remove);
   list.append(item);
   input.value = '';
   feedback.textContent = `${list.children.length} ideas in this sketch.`;

@@ -1,29 +1,62 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{APP_NAME}} — an app prototype from 001 Public.">
-  <title>{{APP_NAME}} · 001 Public</title>
-  <link rel="icon" href="../../../assets/brand/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../shared/styles/tokens.css">
-  <link rel="stylesheet" href="./src/styles.css">
-  <script type="module" src="./src/app.js"></script>
-</head>
-<body>
-  <header><a href="../../">← App library</a><span class="prototype-badge">PROTOTYPE</span></header>
-  <main>
-    <p class="eyebrow">001 PUBLIC / {{CATEGORY}}</p>
-    <h1>{{APP_NAME}}</h1>
-    <p class="description">Your app starts here. Replace this starter interaction with the first useful feature in your project brief.</p>
-    <section aria-labelledby="sandbox-title" class="panel">
-      <h2 id="sandbox-title">Feature sketch</h2>
-      <p>This small interaction verifies the starter’s forms and JavaScript. It is not the finished app.</p>
-      <form id="feature-form"><label for="feature">What should the first version do?</label><div class="form-row"><input id="feature" name="feature" type="text" maxlength="120" required placeholder="One clear, useful feature"><button type="submit">Add idea</button></div></form>
-      <ul id="features" aria-label="Feature ideas"></ul>
-      <p id="feedback" role="status" aria-live="polite">Ideas stay in memory for this visit only.</p>
-    </section>
-  </main>
-  <footer>Built with AI. Reviewed by a human. Source in 001_Public / Vibcoding / {{CATEGORY}} / {{APP_ID}}.</footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="{{APP_NAME}} — an app prototype from 001 Public."
+    />
+    <title>{{APP_NAME}} · 001 Public</title>
+    <link
+      rel="icon"
+      href="../../../assets/brand/mark.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="../../shared/styles/tokens.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="../../">← App library</a
+      ><span class="prototype-badge">PROTOTYPE</span>
+    </header>
+    <main>
+      <p class="eyebrow">001 PUBLIC / {{CATEGORY}}</p>
+      <h1>{{APP_NAME}}</h1>
+      <p class="description">
+        Your app starts here. Replace this starter interaction with the first
+        useful feature in your project brief.
+      </p>
+      <section aria-labelledby="sandbox-title" class="panel">
+        <h2 id="sandbox-title">Feature sketch</h2>
+        <p>
+          This small interaction verifies the starter’s forms and JavaScript. It
+          is not the finished app.
+        </p>
+        <form id="feature-form">
+          <label for="feature">What should the first version do?</label>
+          <div class="form-row">
+            <input
+              id="feature"
+              name="feature"
+              type="text"
+              maxlength="120"
+              required
+              placeholder="One clear, useful feature"
+            /><button type="submit">Add idea</button>
+          </div>
+        </form>
+        <ul id="features" aria-label="Feature ideas"></ul>
+        <p id="feedback" role="status" aria-live="polite">
+          Ideas stay in memory for this visit only.
+        </p>
+      </section>
+    </main>
+    <footer>
+      Built with AI. Reviewed by a human. Source in 001_Public / Vibcoding /
+      {{CATEGORY}} / {{APP_ID}}.
+    </footer>
+  </body>
 </html>

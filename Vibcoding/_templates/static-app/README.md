@@ -49,7 +49,7 @@ npm run build
 
 ## Release
 
-Follow [the app guide](../../../docs/APP_GUIDE.md). Mark both the catalogue and app manifest `ready` only after the intended features work. Add a real screenshot, release date, and version to `app.json`.
+Follow [the app guide](../../../docs/APP_GUIDE.md). Mark both the catalogue and app manifest `ready` only after the intended features work. Add the actual release date, version, and `validation: "docs/case-study.md"` to `app.json`; a real screenshot is optional.
 
 ## License and attribution
 
