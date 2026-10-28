@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/brand/mark.svg" width="72" alt="001 Public code mark"></p>
 
-# 001 Public — Shukur’s Build Lab
+# 001 Public — Noorullah’s Build Lab
 
 **Small ideas. Useful things.** A growing open source portfolio of browser apps, playful experiments, and practical solutions by **Shukur Adel**.
 
