@@ -1,0 +1,12 @@
+{
+  "id": "pocket-budget",
+  "name": "Pocket Budget",
+  "category": "finances",
+  "status": "ready",
+  "version": "1.0.0",
+  "entry": "index.html",
+  "publicFiles": ["index.html", "src", "assets", "manifest.webmanifest"],
+  "releasedOn": "2026-10-28",
+  "screenshot": null,
+  "validation": "docs/case-study.md"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Savings Goal · Noorullah’s Build Lab",
+  "short_name": "Savings Goal",
+  "description": "Turn a savings target into a clear, editable plan.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f2",
+  "theme_color": "#20251e",
+  "icons": [
+    {
+      "src": "../../../assets/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../../../assets/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
