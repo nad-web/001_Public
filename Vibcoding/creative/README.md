@@ -2,19 +2,9 @@
 
 Tools for colors, words, and making something new.
 
-## Project ideas
+| App | Stage |
+| --- | --- |
+| [Palette Studio](palette-studio/README.md) | Ready · 1.0.0 |
+| [Writing Sparks](writing-sparks/README.md) | Ready · 1.0.0 |
 
-| Folder when created | App | Stage |
-| --- | --- | --- |
-| `palette-studio` | Palette Studio | Planned |
-| `writing-sparks` | Writing Sparks | Planned |
-
-These are ideas; no individual app has been implemented yet. The generator creates a project folder only when work begins.
-
-Run from the repository root:
-
-```bash
-npm run create:app -- creative <app-slug> "App Name"
-```
-
-Each generated app contains `index.html`, `src/`, `assets/`, `docs/`, `app.json`, and `README.md`. See [the app guide](../../docs/APP_GUIDE.md) and [roadmap](../../docs/ROADMAP.md).
+Both apps are implemented. Live updates appear after the owner publishes this source package. See [the update guide](../../docs/BROWSER_UPDATE.md) and [validation](../../docs/VALIDATION.md).

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="A gentle reminder to step away from the screen."
+    />
+    <meta name="theme-color" content="#20251e" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Break Buddy" />
+    <title>Break Buddy · Noorullah’s Build Lab</title>
+    <link
+      rel="icon"
+      href="../../../assets/brand/mark.svg"
+      type="image/svg+xml"
+    />
+    <link rel="apple-touch-icon" href="../../../assets/brand/icon-180.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="../../shared/styles/tokens.css" />
+    <link rel="stylesheet" href="../../shared/styles/apps.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body data-app="break-buddy" data-icon="heart">
+    <a class="skip-link" href="#app">Skip to app</a>
+    <div class="wrap">
+      <header class="app-header">
+        <a class="lab-brand" href="../../"
+          ><img
+            src="../../../assets/brand/mark.svg"
+            alt=""
+            width="36"
+            height="36"
+          /><span
+            >Noorullah’s Build Lab<small>001 PUBLIC · APP LIBRARY</small></span
+          ></a
+        >
+        <div class="header-actions">
+          <button
+            id="theme"
+            class="btn secondary"
+            type="button"
+            aria-label="Toggle color theme"
+          >
+            ◐ Theme</button
+          ><button id="install-button" class="btn secondary" type="button">
+            Install app ↗
+          </button>
+        </div>
+      </header>
+      <section class="hero-app" aria-labelledby="app-title">
+        <div class="hero-heading">
+          <span id="app-icon" class="app-glyph" aria-hidden="true"></span>
+          <div>
+            <span class="eyebrow">Wellbeing / 001 PUBLIC</span>
+            <h1 id="app-title">Break Buddy</h1>
+          </div>
+        </div>
+        <p class="summary">A gentle reminder to step away from the screen.</p>
+        <p class="local-note">
+          No account. No trackers. Your records stay in this browser. Export
+          important data before clearing your browser.
+        </p>
+      </section>
+      <main id="app" class="stack" aria-label="Break Buddy"></main>
+      <p id="feedback" class="status" role="status" aria-live="polite"></p>
+      <footer>
+        <a href="../../">← All 20 apps</a
+        ><span
+          >By Noorullah Adel · Built with AI · Source reviewed and tested</span
+        ><a
+          href="https://github.com/Nad-Web/001_Public/tree/main/Vibcoding/health-wellbeing/break-buddy"
+          >Source code ↗</a
+        >
+      </footer>
+    </div>
+    <dialog id="install-dialog" aria-labelledby="install-title">
+      <h2 id="install-title">Keep this app with you.</h2>
+      <div class="install-note">
+        <strong>On iPhone</strong>
+        <p>
+          Open this page in Safari. Tap Share, then Add to Home Screen. Enable
+          Open as Web App if shown, then tap Add.
+        </p>
+      </div>
+      <p>
+        On Android or desktop, use your browser’s Install app option. Each app
+        can have its own Home Screen shortcut.
+      </p>
+      <p id="offline-status">
+        For offline use, stay online until the offline library is ready. Your
+        browser may clear cached files or local records; keep data exports as a
+        backup.
+      </p>
+      <button id="close-install" type="button" class="btn primary">
+        Got it
+      </button>
+    </dialog>
+    <noscript>This app needs JavaScript enabled.</noscript>
+  </body>
+</html>
