@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shukur Adel’s open source workbench: a growing library of useful browser apps, playful experiments, and documented learning.">
+  <meta name="theme-color" content="#f7f8f2">
+  <title>001 Public · Shukur’s Build Lab</title>
+  <link rel="icon" href="../assets/brand/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./shared/styles/tokens.css">
+  <link rel="stylesheet" href="./src/styles.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#library">Skip to app library</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="001 Public home"><img src="../assets/brand/mark.svg" alt="" width="40" height="40"><span>001<span class="brand-light">PUBLIC</span><small>SHUKUR’S BUILD LAB</small></span></a>
+    <nav aria-label="Main navigation"><a href="#library">The library</a><a href="#process">The process</a><a id="repo-link" class="nav-source" href="#foundation">Build notes <span aria-hidden="true">↗</span></a></nav>
+    <button id="theme-toggle" class="icon-button" aria-label="Switch to dark theme" title="Switch theme"><span data-icon="sun" aria-hidden="true"></span></button>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> A PERSONAL OPEN SOURCE WORKBENCH</div>
+        <h1 id="hero-title">Small ideas.<br><span class="highlight">Useful things.</span></h1>
+        <p class="hero-description">A growing collection of apps for everyday life.<br class="desktop-break"> Built with curiosity, AI, and a developer’s care.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#library">Explore the library <span aria-hidden="true">↘</span></a><a class="text-link" href="#process">From idea to shipped <span aria-hidden="true">→</span></a></div>
+        <div class="hero-footnote"><span data-icon="code" aria-hidden="true"></span> Open source. Browser first. Made to be useful.</div>
+      </div>
+      <aside class="workbench" id="foundation" aria-label="Repository foundation">
+        <div class="window-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>001_Public / Vibcoding</span><span class="window-index">01</span></div>
+        <div class="workbench-content">
+          <div class="workbench-label">THE FOUNDATION IS IN PLACE</div>
+          <h2>One home.<br>Many possibilities.</h2>
+          <div class="folder-stack">
+            <div><span data-icon="wallet" aria-hidden="true"></span><span>finances</span><span class="folder-note">make it clear</span></div>
+            <div><span data-icon="language" aria-hidden="true"></span><span>languages</span><span class="folder-note">learn a little</span></div>
+            <div><span data-icon="spark" aria-hidden="true"></span><span>fun</span><span class="folder-note">play a little</span></div>
+            <div class="folder-more"><span data-icon="grid" aria-hidden="true"></span><span>+ 7 more collections</span></div>
+          </div>
+          <div class="workbench-bottom"><span class="tiny-pill">PHASE 01</span><span>Structure ready. Apps come next.</span></div>
+        </div>
+        <span class="workbench-sticker" aria-hidden="true">BUILD.<br>LEARN.<br>REPEAT. <span>✳</span></span>
+      </aside>
+    </section>
+    <section class="stats-strip wrap" aria-label="Library statistics">
+      <div><strong id="collection-count">10</strong><span>curated collections</span></div>
+      <div><strong id="idea-count">20</strong><span>ideas on the board</span></div>
+      <div><strong id="live-count">0</strong><span>live apps · just getting started</span></div>
+      <p>Every project starts with a real problem.<br>Every release comes with the source.</p>
+    </section>
+    <section class="library-section wrap" id="library" aria-labelledby="library-title">
+      <div class="section-top"><div><div class="eyebrow muted">THE COLLECTION / ALWAYS GROWING</div><h2 id="library-title">Find your next little tool.</h2></div><span class="outline-tag">IN THE MAKING <span aria-hidden="true">↗</span></span></div>
+      <div class="filter-toolbar">
+        <label class="search"><span data-icon="search" aria-hidden="true"></span><span class="sr-only">Search app ideas and skills</span><input id="search" type="search" placeholder="Search apps, ideas, or skills…" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+        <label class="status-filter"><span class="sr-only">Filter by status</span><select id="status-filter"><option value="all">All stages</option><option value="ready">Ready to use</option><option value="prototype">Prototype</option><option value="planned">On the roadmap</option></select></label>
+      </div>
+      <div class="category-list" id="categories" role="group" aria-label="Filter by collection"></div>
+      <div class="results-heading"><p id="result-count" role="status" aria-live="polite">Loading the collection…</p><button id="clear-filters" class="reset-button" hidden>Clear filters <span aria-hidden="true">×</span></button><span class="results-note">Ideas today. Useful tools tomorrow.</span></div>
+      <div class="app-grid" id="app-grid" aria-busy="true"></div>
+      <div id="empty-state" class="empty-state" hidden><span data-icon="search" aria-hidden="true"></span><h3>Nothing here just yet.</h3><p>Try a different search or explore another collection.</p><button id="reset-empty" class="button button-dark">Show all ideas</button></div>
+      <div id="load-error" class="empty-state" role="alert" hidden><h3>The collection couldn’t load.</h3><p>Run <code>npm run dev</code> from the repository and open the local URL. This page needs an HTTP server.</p><button id="retry-load" class="button button-dark">Try again</button></div>
+      <noscript><p class="notice">Enable JavaScript to search the interactive library. The full project plan is also available in the repository’s docs/ROADMAP.md.</p></noscript>
+    </section>
+    <section class="process-section wrap" id="process" aria-labelledby="process-title">
+      <div class="section-top"><div><div class="eyebrow muted">A LITTLE METHOD BEHIND THE MAKING</div><h2 id="process-title">Good ideas deserve good craft.</h2></div><p>AI helps build faster.<br>Understanding makes it better.</p></div>
+      <div class="process-grid">
+        <article><span class="step-number">01 / UNDERSTAND</span><span data-icon="compass" aria-hidden="true"></span><h3>Start with a problem.</h3><p>Define who it helps, what it should do, and what a useful first version looks like.</p></article>
+        <article><span class="step-number">02 / MAKE</span><span data-icon="code" aria-hidden="true"></span><h3>Build, question, refine.</h3><p>Use AI as a coding partner. Review the logic, try the edge cases, and make it feel right.</p></article>
+        <article><span class="step-number">03 / SHARE</span><span data-icon="arrow" aria-hidden="true"></span><h3>Ship something honest.</h3><p>Publish a working demo, the complete source, and a short account of what was learned.</p></article>
+      </div>
+    </section>
+    <section class="closing-section wrap"><span class="closing-symbol" aria-hidden="true">✳</span><div><div class="eyebrow muted">BUILT IN PUBLIC, ONE APP AT A TIME</div><h2>A small start. An open road.</h2><p>The structure is ready. Follow along as these ideas become working tools.</p></div><a class="button button-dark" href="#library">See what’s on the board <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer class="site-footer wrap"><a class="footer-brand" href="./">001 PUBLIC <span>/</span> <span id="owner-name">Shukur Adel</span></a><span>Built with AI. Reviewed by a human.</span><span>Open source · MIT · <span id="year">2026</span></span></footer>
+  <dialog id="app-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span id="dialog-category" class="eyebrow muted"></span><button id="close-dialog" class="icon-button" aria-label="Close project concept">×</button></div><span id="dialog-status" class="stage-pill"></span><h2 id="dialog-title"></h2><p id="dialog-summary" class="dialog-summary"></p><h3>The problem</h3><p id="dialog-problem"></p><h3>Made for</h3><p id="dialog-audience"></p><h3>First version</h3><ul id="dialog-features"></ul><h3>Skills to demonstrate</h3><div id="dialog-skills" class="skill-list"></div><div class="dialog-note" id="dialog-note"></div><div class="dialog-actions" id="dialog-actions"></div></dialog>
+</body>
+</html>

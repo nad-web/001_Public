@@ -1,0 +1,11 @@
+{
+  "id": "{{APP_ID}}",
+  "name": "{{APP_NAME}}",
+  "category": "{{CATEGORY}}",
+  "status": "prototype",
+  "version": "0.0.1",
+  "entry": "index.html",
+  "publicFiles": ["index.html", "src", "assets"],
+  "releasedOn": null,
+  "screenshot": null
+}

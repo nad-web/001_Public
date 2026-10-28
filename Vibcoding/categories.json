@@ -1,0 +1,12 @@
+[
+  { "id": "finances", "name": "Finance", "icon": "wallet", "color": "mint", "description": "Clearer budgets, savings goals, and everyday money decisions." },
+  { "id": "fun", "name": "Fun & games", "icon": "spark", "color": "peach", "description": "Playful experiments, small games, and happy distractions." },
+  { "id": "on-the-way", "name": "On the way", "icon": "compass", "color": "blue", "description": "Useful companions for trips, packing, and exploring." },
+  { "id": "languages", "name": "Languages", "icon": "language", "color": "lavender", "description": "German and other languages, one practical exercise at a time." },
+  { "id": "productivity", "name": "Productivity", "icon": "timer", "color": "yellow", "description": "Gentle tools for focus, planning, and getting things done." },
+  { "id": "education", "name": "Learning", "icon": "book", "color": "blue", "description": "Study helpers that turn knowledge into practice." },
+  { "id": "developer-tools", "name": "Developer tools", "icon": "code", "color": "mint", "description": "Small utilities that make building and debugging easier." },
+  { "id": "everyday-tools", "name": "Everyday tools", "icon": "tool", "color": "yellow", "description": "Simple solutions to ordinary, recurring tasks." },
+  { "id": "health-wellbeing", "name": "Wellbeing", "icon": "heart", "color": "peach", "description": "Everyday routines, movement breaks, and personal reflection." },
+  { "id": "creative", "name": "Creative", "icon": "palette", "color": "lavender", "description": "Tools for colors, words, and making something new." }
+]
