@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "JSON Workbench · Noorullah’s Build Lab",
+  "short_name": "JSON Workbench",
+  "description": "Format and inspect JSON without sending it to a server.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f2",
+  "theme_color": "#20251e",
+  "icons": [
+    {
+      "src": "../../../assets/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../../../assets/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

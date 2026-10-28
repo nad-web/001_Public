@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Regex Playground · Noorullah’s Build Lab",
+  "short_name": "Regex Playground",
+  "description": "Explore a pattern against sample text with clear feedback.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f2",
+  "theme_color": "#20251e",
+  "icons": [
+    {
+      "src": "../../../assets/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../../../assets/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

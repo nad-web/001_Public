@@ -2,19 +2,9 @@
 
 Small utilities that make building and debugging easier.
 
-## Project ideas
+| App | Stage |
+| --- | --- |
+| [JSON Workbench](json-workbench/README.md) | Ready · 1.0.0 |
+| [Regex Playground](regex-playground/README.md) | Ready · 1.0.0 |
 
-| Folder when created | App | Stage |
-| --- | --- | --- |
-| `json-workbench` | JSON Workbench | Planned |
-| `regex-playground` | Regex Playground | Planned |
-
-These are ideas; no individual app has been implemented yet. The generator creates a project folder only when work begins.
-
-Run from the repository root:
-
-```bash
-npm run create:app -- developer-tools <app-slug> "App Name"
-```
-
-Each generated app contains `index.html`, `src/`, `assets/`, `docs/`, `app.json`, and `README.md`. See [the app guide](../../docs/APP_GUIDE.md) and [roadmap](../../docs/ROADMAP.md).
+Both apps are implemented. Live updates appear after the owner publishes this source package. See [the update guide](../../docs/BROWSER_UPDATE.md) and [validation](../../docs/VALIDATION.md).
