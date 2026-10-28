@@ -1,106 +1,33 @@
-# Build and release an individual app
+# Extend the app library
 
-## 1. Define a useful first version
+## Start with a clear scope
 
-Read the concept in `Vibcoding/catalogue.json`. Decide the audience, problem, three or fewer first features, observable acceptance criteria, and what stays outside the first version. Record these in the app README and case study when created.
+Read the app/category README, concept brief, and `AGENTS.md`. Define the audience and observable acceptance criteria. Existing apps document their actual version-1 features and limits; keep changes aligned with that scope.
 
-Prefer a browser-only first app with public sample data. Do not add accounts, cloud synchronization, or paid APIs without a specific need.
+## Generate a new app
 
-## 2. Generate the app
-
-Run from the repository root:
+The dependency-free Node generator is optional for developers:
 
 ```bash
-npm run create:app -- languages deutsch-daily
+npm run create:app -- creative my-new-app "My New App"
 ```
 
-This creates `Vibcoding/languages/deutsch-daily/` from the static template and changes that planned catalogue entry to `prototype`. It never overwrites an existing app folder.
+It creates the source directory from the template, registers the new ID, and marks the app prototype. It never merges over an existing app. A planned idea changes stage without duplicating its registry record.
 
-To start a new idea:
+## Implement and integrate
 
-```bash
-npm run create:app -- everyday-tools my-useful-tool "My Useful Tool"
-```
+Use relative URLs and browser-ready modules. Reuse shared helpers for labeling, safe text rendering, validation, storage, and exports. Keep business logic in its app unless another app needs the same stable behavior. Use integer cents for money and local calendar dates for habit-style data.
 
-The generator registers a new concept with explicit draft descriptions. Replace those descriptions with the actual problem and scope. IDs must be lowercase hyphenated names, at most 60 characters, unique across the repository.
+For installation, add a unique relative `manifest.webmanifest` using the existing apps as examples and include it in `app.json` → `publicFiles`. Add the shared PWA helper and the build-only registration marker workflow by using the standard shell. The root builder automatically adds the deployed files to the offline worker’s precache.
 
-## 3. Implement in small slices
+Allowed public paths are index.html, src, assets, data, and manifest.webmanifest. Source documentation, tests, and runtime credentials do not belong in app runtime assets. Secret API keys need separately hosted server logic; they cannot be hidden in static code.
 
-- Replace the generated feature-sketch interface with the intended app.
-- Keep the entry at `index.html`; use `src/app.js` and `src/styles.css` or other browser-ready files inside `src/`.
-- Keep all original or licensed runtime assets in `assets/`; record their licenses in `assets/README.md`.
-- Put optional public data in `data/`. Add `"data"` to `app.json` → `publicFiles` if it is used at runtime.
-- Keep links relative; `../../` returns from an app to the library.
-- Use semantic forms, associated labels, visible focus, keyboard controls, and clear validation messages.
-- Use `textContent` for user input; render trusted static SVG separately.
-- Give persisted records an app-specific key and data version. Catch storage and parsing failures. Add export and reset behavior when storing user-created content.
-- Avoid placeholders that resemble finished features. Leave the app marked prototype until its intended behavior works.
+## Verify
 
-The generator supplies a tiny feature-list interaction to verify wiring, not an implementation of your app concept.
+Run source checks, meaningful tests for important logic, and the deployment build. Test actual flows, bad inputs, reloads, exports/imports, keyboard use, and narrow layouts under the `/001_Public/` prefix. Use the optional browser runner when changing shared behavior. Keep verification limits explicit.
 
-## 4. Run and verify
+## Release and publish
 
-```bash
-npm run dev
-```
+Update the catalogue and app manifest together. A ready app needs a semantic version, actual release date, and `validation: "docs/case-study.md"` pointing to completed evidence. A screenshot is optional supplemental evidence. Record scope, limits, source attribution, and AI assistance honestly.
 
-Open `http://127.0.0.1:4173/Vibcoding/languages/deutsch-daily/`. Test normal use, empty inputs, incorrect inputs, and the important edge cases. If the app saves data, reload, import invalid data, export, and reset. Test keyboard navigation and a narrow screen.
-
-```bash
-npm run check
-npm test
-npm run build
-npm run preview -- --base /001_Public/
-```
-
-Open `http://127.0.0.1:4173/001_Public/Vibcoding/languages/deutsch-daily/` and repeat the main user flow. Confirm the portfolio’s demo link works too.
-
-The root `npm test` runs the tooling suite under `tests/`. For app logic, add meaningful Node tests there that import pure functions from the app, or explicitly integrate an app-specific test runner. Merely adding a test file inside an app does not make the root suite execute it.
-
-For example, a budgeting app needs independently checked totals and rounding cases; a vocabulary app needs question selection, answer evaluation, and persistence checks. A copy-only content edit generally needs a visual check, not a redundant test suite.
-
-## 5. Document your evidence
-
-Update:
-
-- `README.md`: actual behavior, run instructions, storage, limits, and attribution.
-- `docs/case-study.md`: problem, design decisions, technical tradeoffs, actual checks and findings, and what AI helped with.
-- `assets/`: a real screenshot of the working app, e.g. `screenshot.png`.
-- `Vibcoding/catalogue.json`: accurate summary, skills, concept features, and stage.
-- `app.json`: matching identity and release metadata.
-
-Do not use mockup images as evidence of a working app. Use sample data in screenshots.
-
-## 6. Mark ready
-
-Only once acceptance criteria pass, change the app’s status to `ready` in **both** `app.json` and `Vibcoding/catalogue.json`. Example manifest (set the actual release date):
-
-```json
-{
-  "id": "deutsch-daily",
-  "name": "Deutsch Daily",
-  "category": "languages",
-  "status": "ready",
-  "version": "1.0.0",
-  "entry": "index.html",
-  "publicFiles": ["index.html", "src", "assets"],
-  "releasedOn": "YYYY-MM-DD",
-  "screenshot": "assets/screenshot.png"
-}
-```
-
-The checker requires an existing screenshot file, release date, and semantic version for ready apps. Update or remove any hardcoded prototype badge in the app’s own HTML and README. The gallery then changes its link to **Open app**.
-
-## 7. Review and publish
-
-Commit the complete app source and assets. For substantial work, use a branch and pull request. After verification and merge to `main`, Pages publishes the updated library. Confirm the live demo after deployment; a successful local build is not proof that remote deployment succeeded.
-
-Add a short entry to `CHANGELOG.md`. Keep the case study’s limitations current after each release.
-
-## Add a category later
-
-1. Add a record to `Vibcoding/categories.json` with a unique slug, label, description, supported color, and existing icon name from `Vibcoding/src/icons.js`.
-2. Create `Vibcoding/<new-category>/README.md` describing its scope.
-3. Add ideas to the catalogue or run the generator for the new category.
-4. Update the root collection table and the decorative workbench’s category summary if desired. Gallery filters and numerical counts derive from JSON automatically.
-5. Run the normal checks and build.
+Publishing through GitHub’s browser UI does not require local Node/npm. Follow [BROWSER_UPDATE.md](BROWSER_UPDATE.md), then verify the live deployment and device flow.

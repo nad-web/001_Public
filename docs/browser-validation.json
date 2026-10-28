@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-28",
+  "browser": "Chromium",
+  "checks": 26,
+  "passed": 26,
+  "failed": 0,
+  "results": [
+    {
+      "name": "All 20 apps: mobile and desktop rendering, manifests, and accessibility",
+      "passed": true
+    },
+    {
+      "name": "Pocket Budget: exact totals, persistence, CSV export, and safe text",
+      "passed": true
+    },
+    {
+      "name": "Savings Goal: contribution and alternative timeline calculations",
+      "passed": true
+    },
+    {
+      "name": "Trip Split: group, uneven expenses, balances, and settlements",
+      "passed": true
+    },
+    {
+      "name": "Pack Light: template, checked items, persistence, export",
+      "passed": true
+    },
+    {
+      "name": "Week Board: create, move, edit, complete, and persist task",
+      "passed": true
+    },
+    {
+      "name": "Habit Garden: local-day history, undo, and persistence",
+      "passed": true
+    },
+    {
+      "name": "focus-flow: start, pause, deadline recovery, completion",
+      "passed": true
+    },
+    {
+      "name": "break-buddy: start, pause, deadline recovery, completion",
+      "passed": true
+    },
+    {
+      "name": "Deutsch Daily: reveal, recall record, topic and saved progress",
+      "passed": true
+    },
+    {
+      "name": "Artikel Trainer: evaluates a noun’s gender and advances",
+      "passed": true
+    },
+    {
+      "name": "Decision Wheel: editable options and valid reduced-motion result",
+      "passed": true
+    },
+    {
+      "name": "Memory Lab: a complete round using revealed cards",
+      "passed": true
+    },
+    {
+      "name": "Flashcard Studio: CRUD, practice round, import validation, export",
+      "passed": true
+    },
+    {
+      "name": "Quiz Forge: imports, evaluates answers, scores, and reviews mistakes",
+      "passed": true
+    },
+    {
+      "name": "JSON Workbench: formatting, minification, parsing errors, download",
+      "passed": true
+    },
+    {
+      "name": "Regex Playground: matches, invalid pattern, and runaway worker timeout",
+      "passed": true
+    },
+    {
+      "name": "Unit Converter: temperature conversion and absolute-zero error",
+      "passed": true
+    },
+    {
+      "name": "QR Studio: UTF-8 QR round-trip decode and PNG/SVG downloads",
+      "passed": true
+    },
+    {
+      "name": "Palette Studio: locks, contrast, saved colors, CSS export",
+      "passed": true
+    },
+    {
+      "name": "Writing Sparks: autosave, preserved draft, original prompts, text export",
+      "passed": true
+    },
+    {
+      "name": "Library: branding, all launch links, categories, search, and install help",
+      "passed": true
+    },
+    {
+      "name": "Blocked storage: all 20 apps still open and persistence warnings remain truthful",
+      "passed": true
+    },
+    {
+      "name": "Dark theme: shared preference and accessible contrast across app navigation",
+      "passed": true
+    },
+    {
+      "name": "Offline PWA: full library cached and all 20 apps launch without network",
+      "passed": true
+    },
+    {
+      "name": "PWA update: a new cached release waits for explicit reload",
+      "passed": true
+    }
+  ]
+}

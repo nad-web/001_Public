@@ -1,10 +1,12 @@
 {
   "name": "001-public-vibcoding",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "A public portfolio and growing library of independent browser apps.",
-  "engines": { "node": ">=24" },
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "check": "node scripts/check.mjs",

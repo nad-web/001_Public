@@ -1,6 +1,6 @@
 # Instructions for coding assistants
 
-This repository is Shukur Adel’s public portfolio. Preserve the exact names `001_Public` and `Vibcoding`.
+This repository is Noorullah Adel’s public portfolio. Preserve the exact names `001_Public` and `Vibcoding`.
 
 ## Scope
 
@@ -25,4 +25,4 @@ This repository is Shukur Adel’s public portfolio. Preserve the exact names `0
 - Test the actual user flow in a browser at desktop and mobile widths, including the `/001_Public/` prefix before release.
 - Add meaningful tests for important logic; avoid tests that merely repeat markup.
 - Update documentation and case studies with observed evidence and remaining limits.
-- Keep a new app `prototype` until its acceptance criteria are fulfilled. A ready app needs a real screenshot, release date, version, and current case study.
+- Keep a new app `prototype` until its acceptance criteria are fulfilled. A ready app needs a release date, version, and a current case study with completed behavioral checks. Screenshots are optional visual evidence; never invent them.
