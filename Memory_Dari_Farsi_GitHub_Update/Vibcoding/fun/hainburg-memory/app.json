@@ -1,0 +1,16 @@
+{
+  "id": "hainburg-memory",
+  "name": "باغ حافظهٔ هاینبورگ",
+  "category": "fun",
+  "status": "ready",
+  "version": "1.1.0",
+  "entry": "index.html",
+  "publicFiles": [
+    "index.html",
+    "src",
+    "assets"
+  ],
+  "releasedOn": "2026-10-31",
+  "screenshot": null,
+  "validation": "docs/case-study.md"
+}
