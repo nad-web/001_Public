@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
+import { spawnSync } from 'node:child_process';
 import {
   ROOT,
   readJSON,
@@ -54,6 +55,9 @@ export async function buildRepository(root = ROOT) {
     for (const entry of manifest.publicFiles)
       await copyPublic(`${base}/${entry}`);
   }
+  // Publish the standalone Dari/Farsi game at the owner's requested path.
+  for (const entry of ['index.html', 'offline.html', 'manifest.webmanifest', 'sw.js', 'src', 'assets'])
+    await copyPublic(`MemoryGame/${entry}`);
   // Mark built HTML so raw-source dev previews do not request a nonexistent worker.
   for (const file of await filesUnder(output)) {
     if (file.endsWith('.html')) {
@@ -96,6 +100,16 @@ export async function buildRepository(root = ROOT) {
 
 if (isMain(import.meta.url)) {
   try {
+    // Run the self-contained game's tests in the existing Pages build step.
+    const testDirectory = path.join(ROOT, 'MemoryGame', 'tests');
+    const gameTests = (await fs.readdir(testDirectory))
+      .filter((name) => name.endsWith('.test.mjs'))
+      .sort()
+      .map((name) => path.join(testDirectory, name));
+    if (!gameTests.length) throw new Error('MemoryGame tests are missing. Upload the complete game folder.');
+    const checked = spawnSync(process.execPath, ['--test', ...gameTests], { cwd: ROOT, stdio: 'inherit' });
+    if (checked.error) throw checked.error;
+    if (checked.status !== 0) throw new Error('MemoryGame tests failed.');
     console.log(`✓ Built and checked ${await buildRepository()}`);
   } catch (error) {
     console.error(error.message);
