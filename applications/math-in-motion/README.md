@@ -3,6 +3,8 @@
 **Developed and designed by Noorullah Adel · 2026**  
 **Entwickelt und gestaltet von Noorullah Adel · 2026**
 
+https://nad-web.github.io/001_Public/applications/math-in-motion/ 
+
 A standalone mathematics library with **150 lessons in English and German**, from primary arithmetic to university mathematics and advanced applications.
 
 | Level / Lernstufe | Lessons / Lektionen |
