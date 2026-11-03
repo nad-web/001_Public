@@ -40,6 +40,11 @@ jobs:
           node --test applications/sankey-diagram/tests/*.test.mjs
           node applications/sankey-diagram/scripts/build.mjs --output dist/applications/sankey-diagram
 
+      - name: Prepare Math in Motion
+        run: |
+          node --test applications/math-in-motion/tests/*.test.mjs
+          node applications/math-in-motion/tools/build.mjs --output dist/applications/math-in-motion
+
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
