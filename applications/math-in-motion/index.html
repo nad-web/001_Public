@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10182c">
+  <meta name="description" content="Math in Motion by Noorullah Adel. A bilingual math library with explanations, interactive diagrams and narrated videos.">
+  <title>Math in Motion · Noorullah Adel</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./src/style.css">
+  <script defer src="./src/catalog.js"></script>
+  <script defer src="./data/primary.js"></script>
+  <script defer src="./data/middle.js"></script>
+  <script defer src="./data/high.js"></script>
+  <script defer src="./data/university.js"></script>
+  <script defer src="./data/advanced.js"></script>
+  <script defer src="./src/lab-core.js"></script>
+  <script defer src="./src/labs-foundation.js"></script>
+  <script defer src="./src/labs-school.js"></script>
+  <script defer src="./src/labs-university.js"></script>
+  <script defer src="./src/labs-advanced.js"></script>
+  <script defer src="./src/labs-extension.js"></script>
+  <script defer src="./src/app.js"></script>
+</head>
+<body>
+  <a id="skip" class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="frame top-inner">
+      <a class="wordmark" href="#" id="brand">
+        <img src="./assets/mark.svg" alt="" width="38" height="38">
+        <span>Math<span class="word-gap"> in </span>Motion</span>
+      </a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#library" id="nav-library">Library</a>
+        <a href="#saved" id="nav-saved">Saved</a>
+      </nav>
+      <div class="languages" id="languages" role="group" aria-label="Language">
+        <button type="button" lang="en" data-lang="en" aria-label="English" aria-pressed="true">EN</button>
+        <button type="button" lang="de" data-lang="de" aria-label="Deutsch" aria-pressed="false">DE</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="frame" tabindex="-1">
+    <noscript>Enable JavaScript to browse Math in Motion. · Aktiviere JavaScript, um Math in Motion zu nutzen.</noscript>
+  </main>
+  <footer class="footer frame">
+    <div>
+      <strong>Math in Motion</strong>
+      <p id="credit">Developed and designed by Noorullah Adel · 2026</p>
+    </div>
+    <a id="nav-credits" href="#credits">Credits &amp; licenses</a>
+  </footer>
+  <template id="hero-art">
+    <svg class="hero-art" viewBox="0 0 525 283" aria-hidden="true" focusable="false">
+      <defs>
+        <pattern id="hero-dots" width="19" height="19" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.2" fill="#6373a5" opacity=".52"/>
+        </pattern>
+        <linearGradient id="hero-shine" x1="0" x2="1" y1="0" y2="1">
+          <stop stop-color="#d2c9ff"/><stop offset="1" stop-color="#9c8aff"/>
+        </linearGradient>
+      </defs>
+      <rect x="8" y="12" width="509" height="256" rx="15" fill="url(#hero-dots)"/>
+      <g fill="none">
+        <path d="M37 143h454M269 28v224" stroke="#596d99" stroke-dasharray="5 7"/>
+        <circle cx="270" cy="135" r="82" stroke="#475983"/>
+        <circle cx="270" cy="135" r="110" stroke="#364873" stroke-dasharray="6 8"/>
+        <path class="trace" d="M38 179C75 179 103 91 151 91s78 106 122 106 76-106 122-106 67 42 93 42" stroke="url(#hero-shine)" stroke-width="4.5" stroke-linecap="round"/>
+        <path class="trace" d="M40 224C148 214 165 74 240 72s91 129 162 121c39-4 60-35 87-72" stroke="#b9f590" stroke-width="3.4" stroke-linecap="round"/>
+        <g class="orbit"><circle cx="352" cy="135" r="5.5" fill="#83dcff"/></g>
+      </g>
+      <g font-family="system-ui,sans-serif" font-size="17" font-weight="650">
+        <text x="78" y="54" fill="#d4caff">f(x)</text>
+        <text x="429" y="69" fill="#b9f590">Δy</text>
+        <text x="408" y="244" fill="#adbedf">eⁱᵖⁱ</text>
+      </g>
+      <circle cx="240" cy="72" r="5" fill="#b9f590"/>
+      <circle cx="273" cy="197" r="5" fill="#c8baff"/>
+    </svg>
+  </template>
+</body>
+</html>
