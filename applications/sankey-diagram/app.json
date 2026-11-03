@@ -1,0 +1,18 @@
+{
+  "id": "sankey-diagram",
+  "name": "Sankey Studio",
+  "category": "visualisation",
+  "status": "prototype",
+  "version": "0.2.0",
+  "entry": "index.html",
+  "publicFiles": [
+    "index.html",
+    "src",
+    "assets",
+    "manifest.webmanifest",
+    "sw.js"
+  ],
+  "releasedOn": null,
+  "validation": "docs/case-study.md",
+  "developer": "Noorullah Adel"
+}
