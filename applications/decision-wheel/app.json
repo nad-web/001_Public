@@ -1,0 +1,19 @@
+{
+  "id": "decision-wheel",
+  "name": "Decision Wheel",
+  "category": "fun",
+  "summary": "Too many options? Give a small decision a playful spin.",
+  "status": "prototype",
+  "skills": ["Animation", "Randomness", "Interaction design"],
+  "brief": {
+    "problem": "Small group choices can take more discussion than they deserve.",
+    "audience": "Friends deciding what to eat, watch, or do next.",
+    "features": [
+      "Add and remove options",
+      "Spin a wheel with a visible result",
+      "Support keyboard controls and reduced motion"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

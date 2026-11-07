@@ -1,0 +1,316 @@
+{
+  "date": "2026-11-07",
+  "browser": "Chrome CDP",
+  "prefix": "/001_Public/",
+  "desktop": [
+    {
+      "name": "Artikel Trainer",
+      "heading": "Artikel Trainer",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Break Buddy",
+      "heading": "Break Buddy",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Decision Wheel",
+      "heading": "Decision Wheel",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Deutsch Daily",
+      "heading": "Deutsch Daily",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Flashcard Studio",
+      "heading": "Flashcard Studio",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Focus Flow",
+      "heading": "Focus Flow",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Habit Garden",
+      "heading": "Habit Garden",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "JSON Workbench",
+      "heading": "JSON Workbench",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Math in Motion",
+      "heading": "See math in motion.",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Memory Garden · باغ حافظه",
+      "heading": "هر جفت،\nیک لبخند.",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Memory Lab",
+      "heading": "Memory Lab",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Pack Light",
+      "heading": "Pack Light",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Palette Studio",
+      "heading": "Palette Studio",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Pocket Budget",
+      "heading": "Pocket Budget",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "QR Studio",
+      "heading": "QR Studio",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Quiz Forge",
+      "heading": "Quiz Forge",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Regex Playground",
+      "heading": "Regex Playground",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Sankey Studio",
+      "heading": "Make the connections clear.",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Savings Goal",
+      "heading": "Savings Goal",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Trip Split",
+      "heading": "Trip Split",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Unit Converter",
+      "heading": "Unit Converter",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Week Board",
+      "heading": "Week Board",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    },
+    {
+      "name": "Writing Sparks",
+      "heading": "Writing Sparks",
+      "scroll": 1348,
+      "width": 1348,
+      "errors": []
+    }
+  ],
+  "narrowFrameViewport": 320,
+  "narrow": [
+    {
+      "name": "Artikel Trainer",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Break Buddy",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Decision Wheel",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Deutsch Daily",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Flashcard Studio",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Focus Flow",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Habit Garden",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "JSON Workbench",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Math in Motion",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Memory Garden · باغ حافظه",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Memory Lab",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Pack Light",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Palette Studio",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Pocket Budget",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "QR Studio",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Quiz Forge",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Regex Playground",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Sankey Studio",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Savings Goal",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Trip Split",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Unit Converter",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Week Board",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "name": "Writing Sparks",
+      "scroll": 305,
+      "width": 305
+    }
+  ],
+  "physicalIPhone": false,
+  "nativeSafari": false,
+  "firefox": false,
+  "edge": false,
+  "liveHTTPSOfflineInstall": false,
+  "flows": {
+    "pocket-budget": "Added and edited expense; totals showed 15.67 EUR.",
+    "savings-goal": "100 EUR over three months produced 33.34 EUR monthly.",
+    "pack-light": "Added and checked a custom packing item.",
+    "trip-split": "10.01 EUR split between two people produced a 5.00 EUR settlement.",
+    "week-board": "Moved a task from Monday to Friday.",
+    "habit-garden": "Marked today and saw a one-day streak.",
+    "flashcard-studio": "Added a card, shuffled practice, revealed an answer and recorded recall.",
+    "focus-flow": "Started and paused timer.",
+    "break-buddy": "Started and paused timer.",
+    "memory-lab": "Enter revealed a card while keeping keyboard focus on it.",
+    "decision-wheel": "A spin produced a visible selected option.",
+    "deutsch-daily": "Revealed meaning and recorded one remembered item.",
+    "artikel-trainer": "Saw article correction and advanced to next word.",
+    "quiz-forge": "Saw score increment and explanation, then next question.",
+    "json-workbench": "Kept duplicate members, 9007199254740993 and 1e+09.",
+    "regex-playground": "Found two cat matches in submitted text.",
+    "unit-converter": "Converted 100 Celsius to 212 Fahrenheit.",
+    "palette-studio": "Locked color remained unchanged after regeneration.",
+    "writing-sparks": "Draft survived prompt change and reload.",
+    "qr-studio": "Generated SVG and downloaded a 984-by-984 PNG.",
+    "math-in-motion": "German slider, inline video playback progress, male voice selection and phone detail/fit toggle passed.",
+    "memory-game": "Started level, selected two cards and paused with one attempt.",
+    "sankey-diagram": "Protected existing interface opened at desktop and phone width; source unchanged."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "unit-converter",
+  "name": "Unit Converter",
+  "category": "everyday-tools",
+  "summary": "Everyday conversions with the units always in view.",
+  "status": "prototype",
+  "skills": ["Pure functions", "Numeric validation", "Responsive forms"],
+  "brief": {
+    "problem": "Quick conversions can be error-prone when units are unclear.",
+    "audience": "People converting common length, weight, and temperature units.",
+    "features": [
+      "Convert a small reviewed set of units",
+      "Validate numbers and handle empty inputs",
+      "Show formulas or precision notes where useful"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

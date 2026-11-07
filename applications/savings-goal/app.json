@@ -1,0 +1,19 @@
+{
+  "id": "savings-goal",
+  "name": "Savings Goal",
+  "category": "finances",
+  "summary": "Turn a savings target into a clear, editable plan.",
+  "status": "prototype",
+  "skills": ["Calculations", "Input validation", "Charts"],
+  "brief": {
+    "problem": "A large savings target is hard to translate into monthly contributions.",
+    "audience": "People planning a purchase or a savings milestone.",
+    "features": [
+      "Set a target, starting amount, and timeline",
+      "Calculate contributions without investment return assumptions",
+      "Compare editable scenarios with clear units"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

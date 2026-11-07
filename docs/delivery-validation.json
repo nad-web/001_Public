@@ -1,0 +1,22 @@
+[
+  {
+    "package": "complete-extraction",
+    "tests": 154,
+    "passed": 154,
+    "failed": 0,
+    "apps": 23,
+    "build": "passed",
+    "sourceCheck": "passed",
+    "install": "passed"
+  },
+  {
+    "package": "original-plus-update",
+    "tests": 154,
+    "passed": 154,
+    "failed": 0,
+    "apps": 23,
+    "build": "passed",
+    "sourceCheck": "passed",
+    "install": "passed"
+  }
+]

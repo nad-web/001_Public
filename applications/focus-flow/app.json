@@ -1,0 +1,19 @@
+{
+  "id": "focus-flow",
+  "name": "Focus Flow",
+  "category": "productivity",
+  "summary": "A simple focus timer with room to breathe between sessions.",
+  "status": "prototype",
+  "skills": ["Timers", "State machines", "UX design"],
+  "brief": {
+    "problem": "Starting a focused session can feel harder than the work itself.",
+    "audience": "Students and independent workers.",
+    "features": [
+      "Start, pause, and reset focus and break sessions",
+      "Choose session lengths",
+      "Keep time correctly when the tab is backgrounded"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

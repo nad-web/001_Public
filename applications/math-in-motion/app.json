@@ -1,0 +1,23 @@
+{
+  "id": "math-in-motion",
+  "name": "Math in Motion",
+  "category": "education",
+  "status": "prototype",
+  "version": "2.0.0",
+  "entry": "index.html",
+  "publicFiles": [
+    "index.html",
+    "src",
+    "data",
+    "assets",
+    "media",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "sw.js",
+    "manifest.webmanifest"
+  ],
+  "releasedOn": null,
+  "screenshot": null,
+  "offline": true,
+  "summary": "150 bilingual lessons, interactive diagrams and 600 narrated videos."
+}

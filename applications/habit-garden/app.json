@@ -1,0 +1,19 @@
+{
+  "id": "habit-garden",
+  "name": "Habit Garden",
+  "category": "health-wellbeing",
+  "summary": "Track a few everyday habits without turning life into a score.",
+  "status": "prototype",
+  "skills": ["Date handling", "Local storage", "Data design"],
+  "brief": {
+    "problem": "Habit tools can feel overwhelming when only a few routines matter.",
+    "audience": "People tracking self-chosen everyday routines.",
+    "features": [
+      "Create a small set of habits",
+      "Record completions by local calendar date",
+      "Export and delete local records; make no health claims"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

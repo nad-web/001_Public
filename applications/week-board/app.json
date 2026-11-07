@@ -1,0 +1,19 @@
+{
+  "id": "week-board",
+  "name": "Week Board",
+  "category": "productivity",
+  "summary": "A small, flexible board for the week ahead.",
+  "status": "prototype",
+  "skills": ["Drag and drop", "Keyboard UX", "Persistence"],
+  "brief": {
+    "problem": "A weekly plan can become more complicated than the tasks themselves.",
+    "audience": "People organizing a small personal weekly plan.",
+    "features": [
+      "Add tasks to days",
+      "Move tasks with buttons as well as pointer controls",
+      "Save locally and clear a week"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

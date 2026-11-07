@@ -1,0 +1,19 @@
+{
+  "id": "flashcard-studio",
+  "name": "Flashcard Studio",
+  "category": "education",
+  "summary": "Make a small deck, then practice what matters.",
+  "status": "prototype",
+  "skills": ["CRUD", "Import/export", "Learning UX"],
+  "brief": {
+    "problem": "People need an easy way to practice their own questions and answers.",
+    "audience": "Learners working from personal study notes.",
+    "features": [
+      "Create question-and-answer cards",
+      "Practice a shuffled deck",
+      "Import and export validated JSON"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

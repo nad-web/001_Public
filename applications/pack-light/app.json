@@ -1,0 +1,19 @@
+{
+  "id": "pack-light",
+  "name": "Pack Light",
+  "category": "on-the-way",
+  "summary": "A reusable packing list for less last-minute travel chaos.",
+  "status": "prototype",
+  "skills": ["Checklists", "Local storage", "Responsive UI"],
+  "brief": {
+    "problem": "Packing lists get recreated for every trip and small essentials are forgotten.",
+    "audience": "Travelers preparing a weekend or longer trip.",
+    "features": [
+      "Start a list from a trip type",
+      "Add and check personal items",
+      "Save locally and print a clean checklist"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

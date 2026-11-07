@@ -1,0 +1,19 @@
+{
+  "id": "quiz-forge",
+  "name": "Quiz Forge",
+  "category": "education",
+  "summary": "Turn a small question set into a focused practice round.",
+  "status": "prototype",
+  "skills": ["Validation", "Scoring", "Feedback"],
+  "brief": {
+    "problem": "Practice questions often lack a simple, reusable quiz interface.",
+    "audience": "Learners and educators preparing a small practice set.",
+    "features": [
+      "Load a reviewed multiple-choice question set",
+      "Score a round and explain answers",
+      "Review errors without making assessment claims"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "qr-studio",
+  "name": "QR Studio",
+  "category": "everyday-tools",
+  "summary": "Make simple QR codes with an uncluttered preview.",
+  "status": "prototype",
+  "skills": ["Asset export", "Library integration", "Validation"],
+  "brief": {
+    "problem": "Simple QR creation should not require an account or uploading private text.",
+    "audience": "People creating codes for public links or short text.",
+    "features": [
+      "Encode a validated text or web-link input",
+      "Preview and download a code",
+      "Bundle an audited encoder and record its license"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

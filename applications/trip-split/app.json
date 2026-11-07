@@ -1,0 +1,19 @@
+{
+  "id": "trip-split",
+  "name": "Trip Split",
+  "category": "on-the-way",
+  "summary": "Keep shared trip costs understandable from the first coffee.",
+  "status": "prototype",
+  "skills": ["Money arithmetic", "Forms", "Data export"],
+  "brief": {
+    "problem": "Group expenses are difficult to track and settle fairly.",
+    "audience": "Small groups sharing a trip.",
+    "features": [
+      "Add participants and shared expenses in one currency",
+      "Calculate balances with explicit rounding",
+      "Export a summary without claiming to process payments"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

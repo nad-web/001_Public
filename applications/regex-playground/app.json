@@ -1,0 +1,19 @@
+{
+  "id": "regex-playground",
+  "name": "Regex Playground",
+  "category": "developer-tools",
+  "summary": "Explore a pattern against sample text with clear feedback.",
+  "status": "prototype",
+  "skills": ["Web workers", "Regex", "Performance"],
+  "brief": {
+    "problem": "Regular expression experiments need visible matches and safe execution limits.",
+    "audience": "Developers learning or debugging JavaScript patterns.",
+    "features": [
+      "Test a pattern and flags against sample text",
+      "Highlight matches without injecting HTML",
+      "Run matching in a terminable worker with time limits"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Create, edit and export beautiful Sankey diagrams. A private, offline-ready diagram studio developed by Noorullah Adel.">
+  <meta name="author" content="Noorullah Adel">
+  <meta name="theme-color" content="#8065d3">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Sankey Studio · Noorullah Adel</title>
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/styles.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <a href="#workspace" class="skip-link">Skip to editor</a>
+  <svg class="icon-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M4 16v4h16v-4"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v12m-4-4 4 4 4-4M4 17v3h16v-3"/></symbol>
+    <symbol id="i-data" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 10h18M10 4v16"/></symbol>
+    <symbol id="i-style" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1.5-3.3 1.6 1.6 0 0 1 1.2-2.7H18a4 4 0 0 0 4-4c0-4.5-4.5-8-10-8Z"/><path d="M7 10h.01M10 6.8h.01M15 7h.01M18 10h.01" stroke-width="3"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="m8 4-5 5 5 5M3 9h10a7 7 0 0 1 0 14" transform="translate(1 -2)"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="m16 4 5 5-5 5M21 9H11a7 7 0 0 0 0 14" transform="translate(-1 -2)"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+    <symbol id="i-delete" viewBox="0 0 24 24"><path d="M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 8.5a2.7 2.7 0 1 1 4 2.4c-1.5.8-1.5 1.1-1.5 2.6M12 17h.01"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </svg>
+  <header class="app-header">
+    <a class="brand" href="./" aria-label="Sankey Studio home">
+      <img src="./assets/logo.svg" alt="" width="42" height="42">
+      <span>Sankey <strong>Studio</strong><small>A NOORULLAH ADEL APPLICATION</small></span>
+    </a>
+    <div class="header-actions">
+      <span class="developer-credit">Developed by <strong>Noorullah Adel</strong></span>
+      <button id="interface-theme" class="icon-button" title="Toggle interface theme" aria-label="Toggle dark interface"><svg class="icon"><use href="#i-sun"/></svg></button>
+      <button id="help-button" class="icon-button" title="Help and keyboard shortcuts" aria-label="Help"><svg class="icon"><use href="#i-help"/></svg></button>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">YOUR IDEAS, IN FLOW</p><h1>Make the connections clear<span>.</span></h1><p>Turn numbers into a story. Create, customise, and make it yours.</p></div>
+      <div class="intro-actions">
+        <button id="new-button" class="button subtle">New diagram</button>
+        <button id="templates-button" class="button"><svg class="icon"><use href="#i-grid"/></svg>Templates</button>
+        <button id="open-button" class="button primary"><svg class="icon"><use href="#i-upload"/></svg>Import data</button>
+      </div>
+    </section>
+    <section class="workspace" id="workspace" aria-label="Sankey diagram workspace">
+      <aside class="editor">
+        <nav class="panel-tabs" role="tablist" aria-label="Editor panels">
+          <button role="tab" id="tab-data" aria-controls="panel-data" aria-selected="true" data-panel="data"><svg class="icon"><use href="#i-data"/></svg>Data</button>
+          <button role="tab" id="tab-design" aria-controls="panel-design" aria-selected="false" tabindex="-1" data-panel="design"><svg class="icon"><use href="#i-style"/></svg>Design</button>
+          <button role="tab" id="tab-export" aria-controls="panel-export" aria-selected="false" tabindex="-1" data-panel="export"><svg class="icon"><use href="#i-download"/></svg>Export</button>
+        </nav>
+        <div id="panel-data" role="tabpanel" aria-labelledby="tab-data" class="editor-panel">
+          <div class="section-heading"><div><h2>Your flow data</h2><p>Small connections. A bigger picture.</p></div><span class="count-badge" id="link-count">0 flows</span></div>
+          <div class="segmented" role="group" aria-label="Data view">
+            <button id="view-flows" class="active" aria-pressed="true">Flows</button>
+            <button id="view-nodes" aria-pressed="false">Nodes & colours</button>
+          </div>
+          <div id="flows-view">
+            <div class="flow-column-labels" aria-hidden="true"><span>FROM</span><span>TO</span><span>VALUE</span><span></span></div>
+            <div id="flow-list" class="flow-list"></div>
+            <button id="add-flow-button" class="button add-button"><svg class="icon"><use href="#i-plus"/></svg>Add a flow</button>
+            <button id="paste-button" class="text-button">Paste rows from a spreadsheet</button>
+          </div>
+          <div id="nodes-view" hidden>
+            <p class="field-note">Rename nodes or pick individual colours. Changes apply to every connected flow.</p>
+            <div id="node-list" class="node-list"></div>
+            <button id="add-node-button" class="button add-button"><svg class="icon"><use href="#i-plus"/></svg>Add a node</button>
+          </div>
+          <section id="selection-panel" class="selection-panel" hidden aria-label="Selected diagram element"></section>
+          <details class="data-health" id="health-details"><summary id="health-summary">Data checks</summary><div id="health-content"></div></details>
+          <div class="local-note"><span class="privacy-mark" aria-hidden="true">↳</span><p><strong>Your data stays yours.</strong><br>Saved in this browser. No account, no uploads.</p></div>
+        </div>
+        <div id="panel-design" role="tabpanel" aria-labelledby="tab-design" class="editor-panel" hidden>
+          <div class="section-heading"><div><h2>Make it your own</h2><p>A little colour goes a long way.</p></div></div>
+          <label class="field">Diagram title<input id="setting-title" maxlength="120" data-setting="title"></label>
+          <label class="field">Subtitle<input id="setting-subtitle" maxlength="180" data-setting="subtitle"></label>
+          <fieldset><legend>Canvas theme</legend><div id="theme-options" class="theme-options"></div></fieldset>
+          <fieldset><legend>Colour palette</legend><div id="palette-options" class="palette-options"></div></fieldset>
+          <div class="field-pair">
+            <label class="field">Flow colours<select data-setting="linkMode"><option value="gradient">Source → destination</option><option value="source">Source colour</option><option value="target">Destination colour</option><option value="neutral">Neutral</option></select></label>
+            <label class="field">Alignment<select data-setting="align"><option value="justify">Justified</option><option value="left">Left</option><option value="center">Centre</option><option value="right">Right</option></select></label>
+          </div>
+          <label class="field range-field"><span>Flow opacity<output id="output-opacity"></output></span><input type="range" min="0.1" max="1" step="0.05" data-setting="opacity"></label>
+          <label class="field range-field"><span>Node spacing<output id="output-nodeGap"></output></span><input type="range" min="4" max="80" step="1" data-setting="nodeGap"></label>
+          <label class="field range-field"><span>Node width<output id="output-nodeWidth"></output></span><input type="range" min="8" max="60" step="1" data-setting="nodeWidth"></label>
+          <label class="field range-field"><span>Curve softness<output id="output-curvature"></output></span><input type="range" min="0.1" max="0.9" step="0.05" data-setting="curvature"></label>
+          <div class="field-pair">
+            <label class="field">Labels<select data-setting="labels"><option value="both">Names & values</option><option value="name">Names only</option><option value="value">Values only</option><option value="none">Hide labels</option></select></label>
+            <label class="field">Text size<select data-setting="fontSize"><option value="12">Small · 12</option><option value="15">Compact · 15</option><option value="17">Regular · 17</option><option value="21">Large · 21</option><option value="26">Extra large · 26</option></select></label>
+          </div>
+          <div class="field-pair">
+            <label class="field">Unit / currency<input maxlength="20" data-setting="unit" placeholder="€, $, kg, people"></label>
+            <label class="field">Position<select data-setting="unitPosition"><option value="prefix">Before value</option><option value="suffix">After value</option></select></label>
+          </div>
+          <div class="field-pair">
+            <label class="field">Decimal places<select data-setting="decimals"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
+            <label class="field">Background<input id="canvas-background" type="color" aria-label="Custom canvas background colour"></label>
+          </div>
+          <button id="reset-background" class="text-button">Use theme background</button>
+          <fieldset><legend>Canvas dimensions</legend><div class="field-pair">
+            <label class="field">Width<input type="number" min="640" max="3200" step="1" data-setting="width"></label>
+            <label class="field">Height<input type="number" min="400" max="2400" step="1" data-setting="height"></label>
+          </div></fieldset>
+          <label class="check-field"><input type="checkbox" data-setting="showCredit">Include studio credit in exports</label>
+          <button id="reset-positions" class="button full-width">Auto arrange nodes</button>
+          <button id="reset-design" class="button full-width">Reset styling</button>
+        </div>
+        <div id="panel-export" role="tabpanel" aria-labelledby="tab-export" class="editor-panel" hidden>
+          <div class="section-heading"><div><h2>Ready for the world</h2><p>From a quick share to a crisp presentation.</p></div></div>
+          <label class="field">Image resolution<select id="export-scale"><option value="1">Standard · 1×</option><option value="2" selected>High resolution · 2×</option><option value="3">Extra detail · 3×</option></select></label>
+          <p class="field-note" id="export-dimensions"></p>
+          <label class="check-field"><input id="export-transparent" type="checkbox">Transparent background (PNG, SVG, WebP)</label>
+          <div class="export-grid">
+            <button data-export="svg" class="export-card"><span class="file-icon lavender">SVG</span><strong>Vector</strong><small>Sharp at any size</small></button>
+            <button data-export="png" class="export-card"><span class="file-icon mint">PNG</span><strong>Image</strong><small>Crisp & lossless</small></button>
+            <button data-export="jpeg" class="export-card"><span class="file-icon peach">JPG</span><strong>Photo format</strong><small>Solid background</small></button>
+            <button data-export="webp" class="export-card"><span class="file-icon blue">WEBP</span><strong>Modern image</strong><small>Browser dependent</small></button>
+          </div>
+          <div id="export-result" class="export-result" hidden aria-live="polite"><strong>Your file is ready.</strong><img id="export-preview" alt="Preview of the exported diagram"><p>If the download did not start, save it here.</p><a id="export-save-link" href="#" download>Save exported file</a></div>
+          <button id="share-button" class="button full-width">Share a PNG file</button>
+          <button id="print-button" class="button full-width">Print / Save as PDF</button>
+          <div class="divider"></div>
+          <h3>Keep your project editable</h3>
+          <p class="field-note">Project JSON preserves your data, colours and node positions. Images do not preserve the editable project.</p>
+          <button id="save-project" class="button primary full-width"><svg class="icon"><use href="#i-download"/></svg>Download project</button>
+          <button id="export-csv" class="button full-width">Export flow data · CSV</button>
+          <p class="field-note">On iPhone, use Share or the browser’s download menu to save to Files. PDF uses your browser’s print options.</p>
+        </div>
+      </aside>
+      <section class="preview-panel" aria-label="Diagram preview">
+        <header class="preview-toolbar">
+          <div class="document-label"><span class="status-dot"></span><span id="document-title">Untitled flow</span><span class="save-state" id="save-state">Saved locally</span></div>
+          <div class="toolbar-buttons">
+            <button id="undo-button" class="icon-button" aria-label="Undo" title="Undo (Ctrl/⌘ Z)"><svg class="icon"><use href="#i-undo"/></svg></button>
+            <button id="redo-button" class="icon-button" aria-label="Redo" title="Redo (Ctrl/⌘ Shift Z)"><svg class="icon"><use href="#i-redo"/></svg></button>
+            <span class="toolbar-separator"></span>
+            <button id="auto-layout" class="toolbar-text">Auto layout</button>
+            <button id="expand-button" class="icon-button" aria-label="Expand diagram preview" title="Expand preview"><svg class="icon"><use href="#i-fit"/></svg></button>
+          </div>
+        </header>
+        <div class="preview-metrics" aria-label="Diagram summary">
+          <div><span class="metric-label">TOTAL INPUT</span><strong id="metric-total">0</strong></div>
+          <div><span class="metric-label">NODES</span><strong id="metric-nodes">0</strong></div>
+          <div><span class="metric-label">CONNECTIONS</span><strong id="metric-links">0</strong></div>
+          <span class="live-badge">LIVE PREVIEW</span>
+        </div>
+        <div class="diagram-viewport" id="diagram-viewport"><div class="diagram-surface" id="diagram-surface"></div></div>
+        <div class="preview-bottom"><span class="preview-tip">Drag nodes to arrange · tap a flow to edit</span><div class="zoom-controls"><button id="zoom-out" class="icon-button" aria-label="Zoom out">−</button><button id="fit-button" class="zoom-value" title="Fit diagram to preview">Fit</button><button id="zoom-in" class="icon-button" aria-label="Zoom in">+</button></div></div>
+        <div id="diagram-accessible" class="sr-only" aria-live="polite"></div>
+      </section>
+    </section>
+    <footer class="app-footer"><span><img src="./assets/logo.svg" alt="" width="20" height="20">Sankey Studio <span class="footer-divider">/</span> Designed & developed by <strong>Noorullah Adel</strong></span><span id="offline-status">Preparing offline access…</span><button id="install-button" class="text-button">Install app</button></footer>
+  </main>
+  <p id="toast" class="toast" role="status" aria-live="polite" hidden></p>
+  <dialog id="templates-dialog" class="wide-dialog" aria-labelledby="templates-title">
+    <div class="dialog-heading"><div><p class="eyebrow">A LITTLE INSPIRATION</p><h2 id="templates-title">Start with a story.</h2><p>Choose a starting point. Every detail is editable.</p></div><button data-close="templates-dialog" class="icon-button" aria-label="Close templates"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <div id="template-grid" class="template-grid"></div><p class="field-note">All templates use illustrative example data.</p>
+  </dialog>
+  <dialog id="import-dialog" aria-labelledby="import-title">
+    <div class="dialog-heading"><div><h2 id="import-title">Bring your data</h2><p>Open a project, import CSV, or paste spreadsheet rows.</p></div><button data-close="import-dialog" class="icon-button" aria-label="Close import"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <label class="file-drop" for="file-input"><svg class="icon"><use href="#i-upload"/></svg><strong>Choose a CSV or JSON file</strong><span>Or drop it here · maximum 2 MB</span><input id="file-input" type="file" accept=".csv,.tsv,.txt,.json,text/csv,text/tab-separated-values,application/json"></label>
+    <label class="field">Or paste your rows<textarea id="import-text" rows="7" spellcheck="false" placeholder="source,target,value&#10;Salary,Income,4200&#10;Income,Rent,1550"></textarea></label>
+    <p class="field-note">Use source, target and value columns. Commas, tabs and semicolons are supported. Flow values must be nonnegative. Import replaces the current diagram and can be undone.</p>
+    <p id="import-error" class="form-error" role="alert"></p>
+    <div class="dialog-actions"><button data-close="import-dialog" class="button">Cancel</button><button id="apply-import" class="button primary">Import rows</button></div>
+  </dialog>
+  <dialog id="flow-dialog" aria-labelledby="flow-title">
+    <div class="dialog-heading"><div><h2 id="flow-title">Make a connection</h2><p>Choose existing nodes or type new names.</p></div><button data-close="flow-dialog" class="icon-button" aria-label="Close add flow"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <form id="flow-form"><label class="field">From<input id="new-source" list="node-suggestions" required maxlength="80" placeholder="e.g. Salary"></label><label class="field">To<input id="new-target" list="node-suggestions" required maxlength="80" placeholder="e.g. Income"></label><label class="field">Value<input id="new-value" type="number" min="0" max="1000000000000000" step="any" required inputmode="decimal" placeholder="e.g. 4200"></label><datalist id="node-suggestions"></datalist><p id="flow-error" class="form-error" role="alert"></p><div class="dialog-actions"><button type="button" data-close="flow-dialog" class="button">Cancel</button><button class="button primary" type="submit">Add flow</button></div></form>
+  </dialog>
+  <dialog id="node-dialog" aria-labelledby="node-title"><h2 id="node-title">Add a node</h2><form id="node-form"><label class="field">Node name<input id="new-node-name" required maxlength="80"></label><p id="node-error" class="form-error" role="alert"></p><div class="dialog-actions"><button type="button" data-close="node-dialog" class="button">Cancel</button><button class="button primary" type="submit">Add node</button></div></form></dialog>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title"><h2 id="confirm-title">Replace diagram?</h2><p id="confirm-message"></p><form method="dialog" class="dialog-actions"><button class="button" value="cancel">Cancel</button><button class="button primary" value="ok">Continue</button></form></dialog>
+  <dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title">
+    <div class="dialog-heading"><div><p class="eyebrow">A TOOL BY NOORULLAH ADEL</p><h2 id="help-title">A good flow starts here.</h2></div><button data-close="help-dialog" class="icon-button" aria-label="Close help"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <h3>Create & edit</h3><p>Add connections in Data, or import rows with source, target and value columns. New names create nodes automatically. Use Nodes & colours to rename and recolour them. Select a ribbon to edit its colour.</p>
+    <h3>Arrange & explore</h3><p>Drag a node vertically. Keyboard users can focus a node and press ↑ or ↓ (hold Shift for larger steps). Use zoom buttons to inspect details and Fit to see the full chart. Auto layout resets manual positions. Ctrl/⌘ Z undoes; Ctrl/⌘ Shift Z redoes.</p>
+    <h3>Save & export</h3><p>Download Project JSON for a fully editable backup. SVG keeps text and shapes sharp. PNG supports transparency; JPEG uses a solid background. Large raster exports are limited to 16 megapixels. PDF uses the browser’s print dialog. A Share button is provided for supported devices.</p>
+    <h3>Honest data</h3><p>Up to 120 nodes and 300 flows. Values must be finite and nonnegative. Circular connections and self-links are rejected. Zero-value flows remain in your data but are not drawn. Unequal incoming and outgoing totals are reported; no balancing flows are invented. Very small ribbons or long labels may need a larger canvas.</p>
+    <h3>Your data & offline use</h3><p>Nothing is uploaded. Data stays in this browser and does not synchronise between devices. Export backups before switching browsers or installing. Once the offline-ready message appears, the editor and exports work without a connection. Browser storage may be cleared, so keep project backups.</p>
+    <h3>Install on iPhone</h3><p>Open in Safari, tap Share → Add to Home Screen, enable Open as Web App if shown, then Add. Open the Home Screen icon online once and wait for offline preparation.</p>
+    <p class="field-note">Sankey Studio uses d3-sankey 0.12.3, copyright Mike Bostock, under BSD-3-Clause. <a href="./src/vendor/LICENSE">Library licence</a>. Original application code and design © Noorullah Adel, MIT licensed.</p>
+  </dialog>
+  <noscript><p class="noscript">Enable JavaScript to use this diagram editor. All processing happens on your device.</p></noscript>
+</body>
+</html>

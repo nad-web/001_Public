@@ -1,0 +1,19 @@
+{
+  "id": "memory-lab",
+  "name": "Memory Lab",
+  "category": "fun",
+  "summary": "A tiny matching game for a quick mental reset.",
+  "status": "prototype",
+  "skills": ["Game state", "CSS transitions", "Keyboard support"],
+  "brief": {
+    "problem": "A short break should be easy to start without accounts or downloads.",
+    "audience": "Anyone wanting a short matching game.",
+    "features": [
+      "Match shuffled card pairs",
+      "Track moves and restart a round",
+      "Offer keyboard navigation and reduced-motion mode"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

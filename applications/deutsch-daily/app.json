@@ -1,0 +1,19 @@
+{
+  "id": "deutsch-daily",
+  "name": "Deutsch Daily",
+  "category": "languages",
+  "summary": "Build a German vocabulary habit, one useful word at a time.",
+  "status": "prototype",
+  "skills": ["Learning design", "State management", "Accessibility"],
+  "brief": {
+    "problem": "Vocabulary lists are easy to collect and difficult to practice consistently.",
+    "audience": "German learners looking for a short daily practice.",
+    "features": [
+      "Practice a curated set of German words and example sentences",
+      "Reveal translations and record recall in this browser",
+      "Filter by topic and reset learning progress"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "writing-sparks",
+  "name": "Writing Sparks",
+  "category": "creative",
+  "summary": "A small nudge for the blank page.",
+  "status": "prototype",
+  "skills": ["Content design", "Random selection", "Local editing"],
+  "brief": {
+    "problem": "Starting a writing exercise is difficult when the page is empty.",
+    "audience": "People practicing creative writing.",
+    "features": [
+      "Pick from an original curated prompt set",
+      "Write in a simple local editor",
+      "Export text and clear a draft"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "json-workbench",
+  "name": "JSON Workbench",
+  "category": "developer-tools",
+  "summary": "Format and inspect JSON without sending it to a server.",
+  "status": "prototype",
+  "skills": ["Parsing", "Error handling", "Developer UX"],
+  "brief": {
+    "problem": "Unformatted JSON is hard to inspect and parsing errors can be unclear.",
+    "audience": "Developers working with non-sensitive sample data.",
+    "features": [
+      "Validate and pretty-print JSON",
+      "Minify and copy the result",
+      "Show useful errors and impose an input-size limit"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

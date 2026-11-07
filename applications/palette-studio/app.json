@@ -1,0 +1,19 @@
+{
+  "id": "palette-studio",
+  "name": "Palette Studio",
+  "category": "creative",
+  "summary": "Find a handful of colors that work well together.",
+  "status": "prototype",
+  "skills": ["Color math", "Clipboard API", "Visual design"],
+  "brief": {
+    "problem": "A small design project needs a coherent, reusable color palette.",
+    "audience": "Makers starting a personal design project.",
+    "features": [
+      "Generate and lock palette colors",
+      "Check text contrast for selected pairs",
+      "Copy color values and export CSS variables"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

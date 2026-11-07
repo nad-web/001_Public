@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#146d64" />
+    <meta
+      name="description"
+      content="A small, flexible board for the week ahead."
+    />
+    <title>Week Board · Noorullah Adel</title>
+    <link rel="icon" href="./assets/mark.svg" />
+    <link rel="apple-touch-icon" href="./assets/icon-180.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body data-app="week-board" data-icon="grid">
+    <a class="skip-link" href="#app">Skip to application</a>
+    <div class="wrap">
+      <header class="app-header">
+        <a class="lab-brand" href="../"
+          ><span class="brand-mark">NA</span
+          ><span
+            >Noorullah’s Build Lab<small>INDEPENDENT BROWSER APPS</small></span
+          ></a
+        >
+        <div class="header-actions">
+          <button
+            id="theme"
+            class="btn secondary"
+            aria-label="Switch color theme"
+          >
+            ◐ Theme</button
+          ><button id="install-button" class="btn secondary">
+            Keep this app ↗
+          </button>
+        </div>
+      </header>
+      <section class="hero-app">
+        <div>
+          <p class="eyebrow">productivity / 001 PUBLIC</p>
+          <h1 id="app-title">Week Board</h1>
+          <p class="summary">A small, flexible board for the week ahead.</p>
+        </div>
+        <span class="hero-label">Your own little workspace</span>
+      </section>
+      <main id="app" class="stack" aria-label="Week Board"></main>
+      <p id="feedback" class="status" role="status" aria-live="polite"></p>
+      <footer>
+        <a href="../">← All applications</a
+        ><span>Developed and designed by Noorullah Adel · 2026</span
+        ><a
+          href="https://github.com/nad-web/001_Public/tree/main/applications/week-board"
+          >Source ↗</a
+        >
+      </footer>
+    </div>
+    <dialog id="install-dialog" aria-labelledby="install-title">
+      <h2 id="install-title">Keep Week Board with you</h2>
+      <p>
+        On iPhone, open this page in Safari and use Share → Add to Home Screen.
+        On desktop/Android use the browser’s Install option when available.
+      </p>
+      <p id="offline-status" role="status">
+        Preparing this app for offline use…
+      </p>
+      <p>
+        Records stay in this browser. Export important data. Browser storage can
+        be cleared by the device.
+      </p>
+      <button id="close-install" class="btn primary">Close</button>
+    </dialog>
+    <noscript>Enable JavaScript to use this application.</noscript>
+  </body>
+</html>

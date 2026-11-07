@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-07",
+  "videos": 600,
+  "validated": 600,
+  "videoCodec": "H.264",
+  "pixelFormat": "yuv420p",
+  "audioCodec": "AAC",
+  "minimumDuration": 13.554014,
+  "maximumDuration": 32.875,
+  "changedVideos": [
+    "media/high/de-female/inverse-functions.mp4",
+    "media/high/de-male/inverse-functions.mp4",
+    "media/high/en-female/inverse-functions.mp4",
+    "media/high/en-male/inverse-functions.mp4",
+    "media/primary/de-female/equivalent-fractions.mp4",
+    "media/primary/de-male/equivalent-fractions.mp4",
+    "media/primary/en-female/equivalent-fractions.mp4",
+    "media/primary/en-male/equivalent-fractions.mp4"
+  ],
+  "changedCount": 8,
+  "unchangedCount": 592,
+  "changedVideoAudioUnchanged": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "break-buddy",
+  "name": "Break Buddy",
+  "category": "health-wellbeing",
+  "summary": "A gentle reminder to step away from the screen.",
+  "status": "prototype",
+  "skills": ["Timers", "Preferences", "Accessible design"],
+  "brief": {
+    "problem": "Long screen sessions make it easy to forget a short movement break.",
+    "audience": "People who spend long stretches at a desk.",
+    "features": [
+      "Set an in-tab break interval",
+      "Pause and resume reminders",
+      "Offer optional browser notifications only after consent"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

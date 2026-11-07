@@ -1,0 +1,196 @@
+{
+  "application": "Sankey Studio",
+  "developer": "Noorullah Adel",
+  "version": "0.2.0",
+  "upload_destination": "001_Public/applications/sankey-diagram/",
+  "layout": "Extract all entries directly into the destination folder. No wrapper directory.",
+  "application_tests_passed": 22,
+  "source_file_count": 37,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 54,
+      "sha256": "a14e572a10e8f2005776c26c2507348034766ca9cf4f5077790732b9297ef08b"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1010,
+      "sha256": "88463b766089b14faf40973e8855f945cc36dcbb870730a8bc6a4be377896193"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "fa2afe079613331261b4cd969118df381176ae1ba83ae9ca61d5b4240dedb2e4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8239,
+      "sha256": "fd025c3cfd093555c21bdf0d75f5125268559fdf32a7b696598d56a9469fb07f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 884,
+      "sha256": "82aae9cc4032c2e992d0c87d599aaf0d02d4be7e3b1a9af613ac2087cb4da022"
+    },
+    {
+      "path": "app.json",
+      "bytes": 359,
+      "sha256": "5a482ef2ffde988fe470dda27934250e32c67a7d033d8a9e7a7903d142d35423"
+    },
+    {
+      "path": "assets/README.md",
+      "bytes": 411,
+      "sha256": "de844015c09270b6773b0fc1aec09001d31fffce47b67354b4b69e9a3f37b798"
+    },
+    {
+      "path": "assets/icon-192.png",
+      "bytes": 5126,
+      "sha256": "2f7c709415ee736495c688eb575f82118f15296ec3bed3e26aa3f436bc227d58"
+    },
+    {
+      "path": "assets/icon-512.png",
+      "bytes": 18644,
+      "sha256": "81dffe5336506a6516f8cb60e76c74fb1477e457ee9a91cac50e9a1e78443b8e"
+    },
+    {
+      "path": "assets/icon-maskable-512.png",
+      "bytes": 14102,
+      "sha256": "2dd1f12544c5c8f21e24f5d3a72880b820e6165f332d814189f40787088defd5"
+    },
+    {
+      "path": "assets/logo.svg",
+      "bytes": 536,
+      "sha256": "b8a4df7315df725d2cc1a634415e1534dfe2c0ca1e105b14cce33eb030f20c66"
+    },
+    {
+      "path": "docs/GITHUB_PAGES.md",
+      "bytes": 2664,
+      "sha256": "a021b59fa9549099ed3548fdf5820d1857667e672c4c28609a0bebee794287db"
+    },
+    {
+      "path": "docs/case-study.md",
+      "bytes": 4332,
+      "sha256": "cceb55fdafaff9fba6570add8952c49c477fe182ad4d6dd434e4d17bea58a3a8"
+    },
+    {
+      "path": "docs/github-pages-step.yml",
+      "bytes": 282,
+      "sha256": "cf5cdfd3b86c2705786d5b4070b3ae0c69160aae180a83228e02ba8ccdb1ef3a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 22185,
+      "sha256": "c8fd9794ef64a9e7d09f755518aedd1a09a89036b81d71aebd3f4222174469e9"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 644,
+      "sha256": "05a6badaa0fa76d492fe7f2d3fd6445c9fc26cad4c20f124764877b4d1770328"
+    },
+    {
+      "path": "package.json",
+      "bytes": 552,
+      "sha256": "ab8c9ec18d647170a88edf1e1ebb915257573206019e3d76835c2a3981a8e677"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 2759,
+      "sha256": "65d2cea4ce0e89e14dd11be4274053f6e6dd9121c91f104c95fa78fb7c5324d4"
+    },
+    {
+      "path": "scripts/check.mjs",
+      "bytes": 877,
+      "sha256": "a32d45cded14fc08aa25f96404bfc9e1d9acb4431104a7a3017c8e31b4c02e06"
+    },
+    {
+      "path": "scripts/files.mjs",
+      "bytes": 4779,
+      "sha256": "312b769a8fe16ddac4ddf20964172f4a042e6344d6b418e227e23cd975842514"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 4118,
+      "sha256": "6fda547f8c1ecff0a948b0ccd757d5a23d8ba4bfcf7cd5361594468dc898f2b7"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 32815,
+      "sha256": "0825727de41162af29def6fae6e92f1da8d571f7a3dd43496fb8fa9a8af94e87"
+    },
+    {
+      "path": "src/export.js",
+      "bytes": 2792,
+      "sha256": "5a26ed50474ebeb4e5081f5f92a8ce15f9a2eb2ee1db88d69a6cde581f425bbe"
+    },
+    {
+      "path": "src/layout.js",
+      "bytes": 2927,
+      "sha256": "6363fc3af8af9d26bb0194d39ea18203f3ec4de526ef2e3a91fea63fd8cfa098"
+    },
+    {
+      "path": "src/model.js",
+      "bytes": 14357,
+      "sha256": "0a177ee9e3825fcfa38d2e7529ab51986305f8779fb270c54a6567a895b6b7e9"
+    },
+    {
+      "path": "src/pwa.js",
+      "bytes": 2386,
+      "sha256": "b3b65fd4af1639f3d2c187b87c2d8004135cb2db75a3a8be9f0334c46881edd9"
+    },
+    {
+      "path": "src/render.js",
+      "bytes": 6291,
+      "sha256": "542c125c5981cebc531e2b1fa513052226a6f98ef474773d077646e9a9295eb6"
+    },
+    {
+      "path": "src/samples.js",
+      "bytes": 4414,
+      "sha256": "9e21b9afc11e21796b13f04398bff58d7bb0edab2751c4616a0366ab583ba9cb"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 22762,
+      "sha256": "04758a0c88f8d66cbf98d90725626533e4d66643fedebf7611d351a62bbec69f"
+    },
+    {
+      "path": "src/vendor/LICENSE",
+      "bytes": 1471,
+      "sha256": "2bf785e778d67a4f5266cffcd4f2cc5bb98cde73791666e7efeb8002ba32dfa5"
+    },
+    {
+      "path": "src/vendor/align.js",
+      "bytes": 600,
+      "sha256": "bbfb0521b98c612cfe5404cd7e6fd0f8fe9cf4d0afbbf59d1ebaa1ef4040a88e"
+    },
+    {
+      "path": "src/vendor/array.js",
+      "bytes": 777,
+      "sha256": "a54cd473aaac72c83101f74360916a27550a63a940fdc09d9b9dac7e55596774"
+    },
+    {
+      "path": "src/vendor/constant.js",
+      "bytes": 219,
+      "sha256": "25064523cbb3cfcaf7722ce07f6c85ba8eb7dafa1880c1c4bb22ba8b10d4970d"
+    },
+    {
+      "path": "src/vendor/sankey.js",
+      "bytes": 10731,
+      "sha256": "ec32cc31e0867bd44f34a7dabf93495f96b687fd163d1498ed395f986aae61d0"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 1942,
+      "sha256": "9ce90d58a4acac08d7f695f2ff8ddc5bf91e9c9a5ef4057ec3f58d1f146823d8"
+    },
+    {
+      "path": "tests/model.test.mjs",
+      "bytes": 6117,
+      "sha256": "689cccbc8ecf023462ad528f2f54ea2708ccf6b45891fa9b288ee449184b6217"
+    },
+    {
+      "path": "tests/standalone.test.mjs",
+      "bytes": 7622,
+      "sha256": "f96a0a8c3872864d95432aa77c5cbac87e9080f5c9815cd4a8ec54539108718c"
+    }
+  ]
+}

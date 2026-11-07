@@ -1,0 +1,19 @@
+{
+  "id": "pocket-budget",
+  "name": "Pocket Budget",
+  "category": "finances",
+  "summary": "A calm, clear picture of where your monthly money goes.",
+  "status": "prototype",
+  "skills": ["Forms", "Local storage", "Data visualization"],
+  "brief": {
+    "problem": "Budget notes are scattered and monthly totals are hard to see.",
+    "audience": "People tracking a personal monthly budget.",
+    "features": [
+      "Add income and expenses with categories",
+      "See monthly totals and a spending breakdown",
+      "Export and reset browser-stored data"
+    ]
+  },
+  "version": "2.0.0",
+  "offline": true
+}

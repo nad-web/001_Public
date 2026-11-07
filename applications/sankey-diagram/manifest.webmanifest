@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "Sankey Studio by Noorullah Adel",
+  "short_name": "Sankey Studio",
+  "description": "Create, customise and export Sankey diagrams. Developed by Noorullah Adel.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f7fa",
+  "theme_color": "#8065d3",
+  "icons": [
+    { "src": "./assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

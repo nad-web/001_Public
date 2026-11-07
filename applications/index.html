@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Independent browser applications developed and designed by Noorullah Adel."
+    />
+    <meta name="theme-color" content="#146d64" />
+    <title>Noorullah’s Build Lab · Applications</title>
+    <link rel="icon" href="../assets/brand/mark.svg" />
+    <link rel="stylesheet" href="../assets/library/style.css" />
+    <script type="module" src="../assets/library/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#browse">Skip to applications</a>
+    <header class="header">
+      <div class="frame header-inner">
+        <a class="brand" href="./"
+          ><span class="mark">NA</span>Noorullah’s Build Lab</a
+        >
+        <nav class="header-links" aria-label="Main navigation">
+          <a href="#browse">Browse apps</a
+          ><a href="https://github.com/nad-web/001_Public">Source ↗</a
+          ><button id="theme" class="theme" aria-label="Switch color theme">
+            ◐
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="frame">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">An independent collection by Noorullah Adel</p>
+          <h1>A little curiosity.<br />A lot of <em>possibility.</em></h1>
+          <p class="summary">
+            Useful tools, playful experiments and new ways to learn. Find an app
+            for the thing you’re doing today.
+          </p>
+          <div class="hero-links">
+            <a class="hero-link" href="#browse"
+              >Explore the collection <span>↗</span></a
+            ><span
+              ><strong data-app-count>23</strong> apps · Open source · Made for
+              the browser</span
+            >
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-note">
+            <span class="art-top">Ideas into everyday tools</span
+            ><span class="art-symbol">a + b</span
+            ><span class="art-bottom"
+              >DESIGNED TO BE USED.<br />BUILT TO KEEP GROWING.</span
+            >
+          </div>
+        </div>
+      </section>
+      <div class="section-head">
+        <h2>A few places to start</h2>
+        <p>Learn something. Make something. Play a little.</p>
+      </div>
+      <section class="featured" aria-label="Featured applications">
+        <a class="feature" href="./math-in-motion/"
+          ><span class="overline">Understand the idea</span>
+          <h3>Math in Motion</h3>
+          <p>
+            Read, explore and watch 150 mathematics lessons in English and
+            German.
+          </p>
+          <span>Start learning ↗</span></a
+        ><a class="feature" href="./sankey-diagram/"
+          ><span class="overline">Follow the flow</span>
+          <h3>Sankey Studio</h3>
+          <p>Turn connected data into a clear, editable flow diagram.</p>
+          <span>Make a diagram ↗</span></a
+        ><a class="feature" href="./memory-game/"
+          ><span class="overline">Take a quiet moment</span>
+          <h3>Memory Garden</h3>
+          <p>
+            A Dari/Farsi matching garden with familiar objects and local
+            narration.
+          </p>
+          <span>Play a round ↗</span></a
+        >
+      </section>
+      <section id="browse">
+        <div class="browse-head">
+          <div>
+            <h2>Find your next little tool.</h2>
+            <p>One library. Independent apps. A place for every idea.</p>
+          </div>
+          <label class="search-label" for="app-search"
+            >Search the collection<input
+              id="app-search"
+              type="search"
+              placeholder="What would you like to do?"
+          /></label>
+        </div>
+        <div
+          id="category-filters"
+          class="filters"
+          aria-label="Filter by category"
+        ></div>
+        <div class="results">
+          <span id="result-count" role="status">Loading applications…</span
+          ><button id="clear-filters" class="clear">Clear filters</button>
+        </div>
+        <div id="app-grid" class="app-grid"></div>
+        <p id="no-results" hidden>
+          No applications match. Try another search or clear the filters.
+        </p>
+      </section>
+    </main>
+    <footer class="frame">
+      <span>Developed and designed by Noorullah Adel · 2026</span
+      ><span
+        >Independent browser apps · MIT and credited third-party licenses</span
+      ><a href="https://github.com/nad-web/001_Public">Explore the source ↗</a>
+    </footer>
+    <noscript
+      >Enable JavaScript to search the application library. Featured app links
+      remain available above.</noscript
+    >
+  </body>
+</html>
