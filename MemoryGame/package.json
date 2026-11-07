@@ -1,6 +1,0 @@
-{
- "name":"hainburg-memory-fa", "version":"1.1.0", "private":true, "type":"module",
- "description":"Standalone Dari/Farsi offline memory game by Noorullah Adel",
- "scripts":{"test":"node --test tests/*.test.mjs","cache":"node scripts/update-cache.mjs"},
- "license":"MIT"
-}
