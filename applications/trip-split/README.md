@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/trip-split/).
+[Open this app](https://nad-web.github.io/public/applications/trip-split/).
 
 Keep shared trip costs understandable from the first coffee.
 

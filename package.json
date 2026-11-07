@@ -1,5 +1,5 @@
 {
-  "name": "001-public-applications",
+  "name": "noorullah-public-applications",
   "version": "2.0.0",
   "private": true,
   "type": "module",
@@ -11,7 +11,7 @@
     "check": "node scripts/check.mjs",
     "test": "node scripts/test.mjs",
     "build": "node scripts/build.mjs",
-    "preview": "node scripts/serve.mjs dist --base /001_Public/",
+    "preview": "node scripts/serve.mjs dist --base /public/",
     "create:app": "node scripts/create-app.mjs",
     "catalogue": "node scripts/catalogue.mjs",
     "sync:ui": "node scripts/sync-app-kit.mjs"

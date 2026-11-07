@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/pack-light/).
+[Open this app](https://nad-web.github.io/public/applications/pack-light/).
 
 A reusable packing list for less last-minute travel chaos.
 

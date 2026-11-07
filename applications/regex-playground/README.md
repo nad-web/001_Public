@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/regex-playground/).
+[Open this app](https://nad-web.github.io/public/applications/regex-playground/).
 
 Explore a pattern against sample text with clear feedback.
 

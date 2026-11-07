@@ -1,6 +1,6 @@
 # Repository instructions
 
-This is Noorullah Adel's public application library. Preserve the exact name `001_Public`.
+This is Noorullah Adel's public application library. Preserve the exact name `public`.
 
 - Every app belongs in `applications/<lowercase-hyphenated-slug>/` and carries its own browser-ready runtime files. Use app-relative URLs.
 - The build discovers folders and optional app.json metadata automatically. Do not add manual per-app build steps or maintain a second application registry.
@@ -12,4 +12,4 @@ This is Noorullah Adel's public application library. Preserve the exact name `00
 - Offline caches belong to individual apps. Never precache the growing library or delete another app's cache.
 - The starter kit lives in templates/static-app. Existing apps have independent copies. npm run sync:ui intentionally updates their kit; app logic stays local.
 - Preserve MIT, vendor licenses and local asset/voice provenance.
-- Run npm run check, npm test, npm run build. Test the changed flow in a browser below /001_Public/, including phone width. State pending physical-device checks honestly.
+- Run npm run check, npm test, npm run build. Test the changed flow in a browser below /public/, including phone width. State pending physical-device checks honestly.

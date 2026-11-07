@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/json-workbench/).
+[Open this app](https://nad-web.github.io/public/applications/json-workbench/).
 
 Format and inspect JSON without sending it to a server.
 

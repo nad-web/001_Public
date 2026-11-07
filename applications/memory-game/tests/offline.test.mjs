@@ -42,7 +42,7 @@ async function worker({ fail = "", existing = {} } = {}) {
     },
   };
   const self = {
-    registration: { scope: "https://example.com/001_Public/MemoryGame/" },
+    registration: { scope: "https://example.com/public/MemoryGame/" },
     clients: { async claim() {} },
     addEventListener(n, f) {
       listeners[n] = f;
@@ -105,13 +105,13 @@ test("service worker installs all assets, verifies completeness, and isolates ot
     existing: {
       "another-game-v1": true,
       "hainburg-fa:https://other.com/:old": true,
-      "hainburg-fa:https://example.com/001_Public/MemoryGame/:old": true,
+      "hainburg-fa:https://example.com/public/MemoryGame/:old": true,
     },
   });
   await w.event("install");
   await w.event("activate");
   assert.deepEqual(w.deleted, [
-    "hainburg-fa:https://example.com/001_Public/MemoryGame/:old",
+    "hainburg-fa:https://example.com/public/MemoryGame/:old",
   ]);
   let result;
   await w.event("message", {
@@ -161,7 +161,7 @@ test("offline navigation works at the nested repository path and ignores unrelat
   await w.event("install");
   const response = await w.event("fetch", {
     request: {
-      url: "https://example.com/001_Public/MemoryGame/?homescreen=1",
+      url: "https://example.com/public/MemoryGame/?homescreen=1",
       method: "GET",
       mode: "navigate",
       headers: new Headers(),
@@ -171,13 +171,13 @@ test("offline navigation works at the nested repository path and ignores unrelat
   assert.match(await response.text(), /index.html/);
   assert.equal(
     await w.event("fetch", {
-      request: new Request("https://example.com/001_Public/other-app/"),
+      request: new Request("https://example.com/public/other-app/"),
     }),
     undefined,
   );
   assert.equal(
     await w.event("fetch", {
-      request: new Request("https://other.com/001_Public/MemoryGame/"),
+      request: new Request("https://other.com/public/MemoryGame/"),
     }),
     undefined,
   );
@@ -186,7 +186,7 @@ test("Safari audio byte ranges return correct partial responses from the offline
   const w = await worker();
   await w.event("install");
   const url =
-    "https://example.com/001_Public/MemoryGame/assets/audio/persian.mp3";
+    "https://example.com/public/MemoryGame/assets/audio/persian.mp3";
   const response = await w.event("fetch", {
     request: new Request(url, { headers: { Range: "bytes=2-9" } }),
   });

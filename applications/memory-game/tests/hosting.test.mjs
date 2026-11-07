@@ -4,9 +4,9 @@ import fs from "node:fs/promises";
 import http from "node:http";
 import { releaseAssets } from "../scripts/update-cache.mjs";
 
-test("standalone runtime and every asset reference resolve under /001_Public/applications/memory-game/", async () => {
+test("standalone runtime and every asset reference resolve under /public/applications/memory-game/", async () => {
   const root = new URL("../", import.meta.url),
-    prefix = "/001_Public/applications/memory-game/";
+    prefix = "/public/applications/memory-game/";
   const files = await releaseAssets(),
     allowed = new Set([...files, "sw.js"]);
   const types = {

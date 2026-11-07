@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/artikel-trainer/).
+[Open this app](https://nad-web.github.io/public/applications/artikel-trainer/).
 
 Make der, die, and das a little less mysterious.
 

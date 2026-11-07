@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/week-board/).
+[Open this app](https://nad-web.github.io/public/applications/week-board/).
 
 A small, flexible board for the week ahead.
 

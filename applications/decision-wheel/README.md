@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/decision-wheel/).
+[Open this app](https://nad-web.github.io/public/applications/decision-wheel/).
 
 Too many options? Give a small decision a playful spin.
 

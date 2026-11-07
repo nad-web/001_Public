@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/savings-goal/).
+[Open this app](https://nad-web.github.io/public/applications/savings-goal/).
 
 Turn a savings target into a clear, editable plan.
 

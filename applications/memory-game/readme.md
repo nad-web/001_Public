@@ -8,7 +8,7 @@
 
 پس از انتشار مخزن، بازی در این نشانی قرار می‌گیرد:
 
-https://nad-web.github.io/001_Public/applications/memory-game/
+https://nad-web.github.io/public/applications/memory-game/
 
 ۱. با اینترنت باز کنید. دکمهٔ «افزودن به آیفون» در بالای سمت راست، راهنمای کامل را نشان می‌دهد.
 

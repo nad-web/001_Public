@@ -4,8 +4,8 @@
 | ------------- | ------------------------------------------------------------------- |
 | Folder        | `applications/invoice-studio/`                                      |
 | Entry         | `applications/invoice-studio/index.html`                            |
-| Published app | `https://nad-web.github.io/001_Public/applications/invoice-studio/` |
-| Main library  | `https://nad-web.github.io/001_Public/applications/`                |
+| Published app | `https://nad-web.github.io/public/applications/invoice-studio/` |
+| Main library  | `https://nad-web.github.io/public/applications/`                |
 
 ## Browser-only method
 

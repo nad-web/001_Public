@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/qr-studio/).
+[Open this app](https://nad-web.github.io/public/applications/qr-studio/).
 
 Make simple QR codes with an uncluttered preview.
 

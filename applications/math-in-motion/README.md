@@ -3,7 +3,7 @@
 **Developed and designed by Noorullah Adel · 2026**  
 **Entwickelt und gestaltet von Noorullah Adel · 2026**
 
-https://nad-web.github.io/001_Public/applications/math-in-motion/
+https://nad-web.github.io/public/applications/math-in-motion/
 
 A standalone mathematics library with **150 lessons in English and German**, from primary arithmetic to university mathematics and advanced applications.
 
@@ -22,9 +22,9 @@ Jede Lektion umfasst **Lesen**, **Entdecken** und **Ansehen**. Erklärungen, dur
 
 ## Publish / Veröffentlichen
 
-Extract the ZIP and put the single `math-in-motion` folder under `001_Public/applications/`. The repository already uses a shared Pages workflow. Follow [the deployment guide](docs/DEPLOY-GITHUB.md). The shared workflow discovers this app automatically; no per-app workflow edit is required. The guide includes browser-only uploads and the complete workflow based on the existing deployment.
+Extract the ZIP and put the single `math-in-motion` folder under `public/applications/`. The repository already uses a shared Pages workflow. Follow [the deployment guide](docs/DEPLOY-GITHUB.md). The shared workflow discovers this app automatically; no per-app workflow edit is required. The guide includes browser-only uploads and the complete workflow based on the existing deployment.
 
-Entpacke das ZIP und lade den Ordner `math-in-motion` unter `001_Public/applications/` hoch. Die [Anleitung](docs/DEPLOY-GITHUB.md) erklärt den Upload und die Einrichtung von GitHub Pages.
+Entpacke das ZIP und lade den Ordner `math-in-motion` unter `public/applications/` hoch. Die [Anleitung](docs/DEPLOY-GITHUB.md) erklärt den Upload und die Einrichtung von GitHub Pages.
 
 - [Curriculum / Themenübersicht](docs/CURRICULUM.md)
 - [Validation / Prüfungen](docs/VALIDATION.md)

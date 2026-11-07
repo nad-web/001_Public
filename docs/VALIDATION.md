@@ -2,6 +2,8 @@
 
 **2026-11-07 · Noorullah Adel · manual-upload deliverable.** No GitHub push or public deployment was performed.
 
+This release updates the repository name and published links to `nad-web/public`, with previews under `/public/`. The earlier Chrome interaction/layout evidence in `browser-validation.json` accurately retains its original `/001_Public/` test prefix. The rename does not change app layouts or stored-record keys. The rename-specific checks and fresh ZIP validation are recorded in `rename-validation.json` and `delivery-validation.json`.
+
 | Executed check        | Result                                                                                                                                                              |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Source and app checks | 23 canonical apps; JavaScript/metadata/viewport checks; Math's 150 bilingual lessons/600 media checks; Sankey's existing source check.                              |

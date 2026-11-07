@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/focus-flow/).
+[Open this app](https://nad-web.github.io/public/applications/focus-flow/).
 
 A simple focus timer with room to breathe between sessions.
 

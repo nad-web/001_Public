@@ -12,7 +12,7 @@ export async function writeReadmes(root = ROOT) {
     "| --- | --- | --- |",
     ...apps.map(
       (a) =>
-        `| [${safe(a.name)}](https://nad-web.github.io/001_Public/applications/${a.id}/) | ${safe(a.category)} | ${safe(a.summary)} |`,
+        `| [${safe(a.name)}](https://nad-web.github.io/public/applications/${a.id}/) | ${safe(a.category)} | ${safe(a.summary)} |`,
     ),
   ].join("\n");
   for (const relative of ["README.md", "applications/README.md"]) {

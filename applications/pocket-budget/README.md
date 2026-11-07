@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/pocket-budget/).
+[Open this app](https://nad-web.github.io/public/applications/pocket-budget/).
 
 A calm, clear picture of where your monthly money goes.
 

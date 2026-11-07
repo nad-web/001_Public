@@ -1,6 +1,8 @@
 [
   {
-    "package": "complete-extraction",
+    "package": "public_Rebuilt.zip",
+    "method": "fresh complete extraction",
+    "prefix": "/public/",
     "tests": 154,
     "passed": 154,
     "failed": 0,
@@ -10,7 +12,9 @@
     "install": "passed"
   },
   {
-    "package": "original-plus-update",
+    "package": "public_Update.zip",
+    "method": "original archive plus update overlay",
+    "prefix": "/public/",
     "tests": 154,
     "passed": 154,
     "failed": 0,

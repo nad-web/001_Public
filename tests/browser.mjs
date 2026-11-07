@@ -11,9 +11,9 @@ assert(
 );
 const { output } = await buildRepository(),
   apps = await discoverApps(),
-  server = createStaticServer({ root: output, basePath: "/001_Public/" });
+  server = createStaticServer({ root: output, basePath: "/public/" });
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
-const base = `http://127.0.0.1:${server.address().port}/001_Public/`;
+const base = `http://127.0.0.1:${server.address().port}/public/`;
 let browser,
   checks = 0;
 try {

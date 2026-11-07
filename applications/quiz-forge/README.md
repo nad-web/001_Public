@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/quiz-forge/).
+[Open this app](https://nad-web.github.io/public/applications/quiz-forge/).
 
 Turn a small question set into a focused practice round.
 

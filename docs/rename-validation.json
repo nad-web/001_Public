@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-07",
+  "repository": "nad-web/public",
+  "prefix": "/public/",
+  "sourceCheck": "passed",
+  "automatedTests": {
+    "passed": 154,
+    "failed": 0
+  },
+  "buildApplications": 23,
+  "publishedResourcePathsChecked": 178,
+  "resourceCheckMethod": "Resolved published HTML references, manifests and workers against the built artifact. Localhost HTTP prefix/MIME/range checks passed in the automated suite.",
+  "readmeAppLinks": 23,
+  "sankeyFilesUnchanged": 38,
+  "storedThemeKeysPreserved": true,
+  "chromePreview": {
+    "libraryCards": 23,
+    "sankeyOpenedAtNewPath": true,
+    "desktopWidth": 1348,
+    "desktopScrollWidth": 1348
+  },
+  "chrome320pxFrames": [
+    {
+      "name": "Application library",
+      "clientWidth": 305,
+      "scrollWidth": 305
+    },
+    {
+      "name": "Sankey Studio",
+      "clientWidth": 305,
+      "scrollWidth": 305
+    },
+    {
+      "name": "Math in Motion",
+      "clientWidth": 305,
+      "scrollWidth": 305
+    }
+  ],
+  "physicalIPhone": false,
+  "nativeSafari": false,
+  "firefox": false,
+  "edge": false,
+  "publicDeploymentPerformed": false
+}

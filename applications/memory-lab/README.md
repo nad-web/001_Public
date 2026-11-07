@@ -2,7 +2,7 @@
 
 **Developed and designed by Noorullah Adel · 2026.**
 
-[Open this app](https://nad-web.github.io/001_Public/applications/memory-lab/).
+[Open this app](https://nad-web.github.io/public/applications/memory-lab/).
 
 A tiny matching game for a quick mental reset.
 

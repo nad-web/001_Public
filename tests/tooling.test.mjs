@@ -71,7 +71,7 @@ test("a future index-only app is published and linked without editing the workfl
   );
   assert.match(
     await fs.readFile(path.join(root, "README.md"), "utf8"),
-    /applications\/future-tool\//,
+    /https:\/\/nad-web\.github\.io\/public\/applications\/future-tool\//,
   );
   await fs.writeFile(
     path.join(app, "index.html"),
@@ -172,10 +172,10 @@ test("compatible local records prevent stale-tab overwrites and survive unavaila
 test("preview handles project prefixes, folder redirects, video MIME and normal/suffix/invalid ranges", async (t) => {
   const root = await fixture(t);
   await fs.writeFile(path.join(root, "video.mp4"), "0123456789");
-  const server = createStaticServer({ root, basePath: "/001_Public/" });
+  const server = createStaticServer({ root, basePath: "/public/" });
   await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
   t.after(() => new Promise((resolve) => server.close(resolve)));
-  const base = `http://127.0.0.1:${server.address().port}/001_Public/`;
+  const base = `http://127.0.0.1:${server.address().port}/public/`;
   const range = await fetch(base + "video.mp4", {
     headers: { Range: "bytes=0-1" },
   });
@@ -196,8 +196,8 @@ test("preview handles project prefixes, folder redirects, video MIME and normal/
   assert.equal((await fetch(base + ".git/config")).status, 403);
 });
 test("compiled offline worker starts without network and preserves other app and saved-video caches", async () => {
-  const scope = "https://example.test/001_Public/applications/demo/",
-    prefix = "noorullah-app:/001_Public/applications/demo/:",
+  const scope = "https://example.test/public/applications/demo/",
+    prefix = "noorullah-app:/public/applications/demo/:",
     events = new Map(),
     stores = new Map();
   function cache(name) {

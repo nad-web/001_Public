@@ -19,7 +19,7 @@ const text = el("textarea", {
   name: "text",
   maxlength: 1200,
   required: true,
-  placeholder: "https://nad-web.github.io/001_Public/Vibcoding/",
+  placeholder: "https://nad-web.github.io/public/applications/",
 });
 const preview = el(
   "div",

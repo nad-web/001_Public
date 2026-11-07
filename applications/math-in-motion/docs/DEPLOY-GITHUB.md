@@ -1,6 +1,6 @@
 # Publish Math in Motion
 
-Keep the complete folder at applications/math-in-motion/ with index.html directly inside it. Published address: https://nad-web.github.io/001_Public/applications/math-in-motion/.
+Keep the complete folder at applications/math-in-motion/ with index.html directly inside it. Published address: https://nad-web.github.io/public/applications/math-in-motion/.
 
 The repository workflow discovers, checks and publishes it automatically. Do not add a manual Math build block or separate Pages deployment. [Upload guide](../../../docs/MIGRATION.md).
 
