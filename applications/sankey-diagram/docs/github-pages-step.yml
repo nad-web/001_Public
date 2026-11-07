@@ -1,5 +1,0 @@
-      - name: Prepare Sankey Studio
-        run: |
-          node applications/sankey-diagram/scripts/check.mjs
-          node --test applications/sankey-diagram/tests/*.test.mjs
-          node applications/sankey-diagram/scripts/build.mjs --output dist/applications/sankey-diagram
